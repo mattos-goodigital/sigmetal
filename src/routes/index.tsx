@@ -169,7 +169,7 @@ function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 text-sm font-medium text-red-400 mb-6">
+        <div className="hidden md:inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 text-sm font-medium text-red-400 mb-6">
           <Flame className="h-4 w-4" />
           Serralheria Industrial de Precisão
         </div>
