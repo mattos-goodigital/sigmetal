@@ -284,17 +284,6 @@ function AboutSection() {
                 loading="lazy"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 md:-left-10 bg-zinc-900 border border-zinc-800 rounded-xl p-5 shadow-xl max-w-[260px]">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500/10 text-red-500">
-                  <HardHat className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="text-sm font-bold text-zinc-100">Equipe Qualificada</div>
-                  <div className="text-xs text-zinc-400">Soldadores certificados</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
