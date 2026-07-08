@@ -32,9 +32,9 @@ const THEME = {
   bgAlt: "bg-zinc-900",
   text: "text-zinc-100",
   textMuted: "text-zinc-400",
-  accent: "text-amber-500",
-  accentBg: "bg-amber-500",
-  accentHover: "hover:bg-amber-600",
+  accent: "text-red-500",
+  accentBg: "bg-red-500",
+  accentHover: "hover:bg-red-600",
   border: "border-zinc-800",
   card: "bg-zinc-900/60",
 };
@@ -90,9 +90,9 @@ function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <button onClick={() => scrollTo("hero")} className="flex items-center gap-2 group">
-            <Factory className="h-7 w-7 text-amber-500 group-hover:text-amber-400 transition-colors" />
+            <Factory className="h-7 w-7 text-red-500 group-hover:text-red-400 transition-colors" />
             <span className="text-xl font-bold tracking-tight">
-              SIG<span className="text-amber-500">METAL</span>
+              SIG<span className="text-red-500">METAL</span>
             </span>
           </button>
 
@@ -102,14 +102,14 @@ function Navbar() {
               <button
                 key={l.id}
                 onClick={() => scrollTo(l.id)}
-                className="text-sm font-medium text-zinc-300 hover:text-amber-500 transition-colors"
+                className="text-sm font-medium text-zinc-300 hover:text-red-500 transition-colors"
               >
                 {l.label}
               </button>
             ))}
             <button
               onClick={() => scrollTo("contato")}
-              className="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2 text-sm font-semibold text-zinc-950 hover:bg-amber-400 transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg bg-red-500 px-4 py-2 text-sm font-semibold text-zinc-950 hover:bg-red-400 transition-colors"
             >
               <Phone className="h-4 w-4" />
               Orçamento
@@ -134,14 +134,14 @@ function Navbar() {
               <button
                 key={l.id}
                 onClick={() => scrollTo(l.id)}
-                className="block w-full text-left text-base font-medium text-zinc-300 hover:text-amber-500 py-2"
+                className="block w-full text-left text-base font-medium text-zinc-300 hover:text-red-500 py-2"
               >
                 {l.label}
               </button>
             ))}
             <button
               onClick={() => scrollTo("contato")}
-              className="w-full mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-amber-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 hover:bg-amber-400 transition-colors"
+              className="w-full mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-red-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 hover:bg-red-400 transition-colors"
             >
               <Phone className="h-4 w-4" />
               Solicitar Orçamento
@@ -169,12 +169,12 @@ function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-sm font-medium text-amber-400 mb-6">
+        <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 text-sm font-medium text-red-400 mb-6">
           <Flame className="h-4 w-4" />
           Serralheria Industrial de Precisão
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight">
-          Forjando <span className="text-amber-500">Estruturas</span>
+          Forjando <span className="text-red-500">Estruturas</span>
           <br />
           que Constroem o Futuro
         </h1>
@@ -189,7 +189,7 @@ function HeroSection() {
               e.preventDefault();
               document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="inline-flex items-center gap-2 rounded-xl bg-amber-500 px-8 py-4 text-base font-bold text-zinc-950 hover:bg-amber-400 transition-all hover:scale-[1.02] shadow-lg shadow-amber-500/20"
+            className="inline-flex items-center gap-2 rounded-xl bg-red-500 px-8 py-4 text-base font-bold text-zinc-950 hover:bg-red-400 transition-all hover:scale-[1.02] shadow-lg shadow-red-500/20"
           >
             <Phone className="h-5 w-5" />
             Solicitar Orçamento
@@ -225,7 +225,7 @@ function StatsBar() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-800">
         {stats.map((s) => (
           <div key={s.label} className="bg-zinc-900/90 backdrop-blur-sm px-6 py-8 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-amber-500">{s.value}</div>
+            <div className="text-3xl md:text-4xl font-bold text-red-500">{s.value}</div>
             <div className="mt-2 text-sm text-zinc-400 font-medium">{s.label}</div>
           </div>
         ))}
@@ -248,7 +248,7 @@ function AboutSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-sm font-semibold text-amber-500 tracking-wider uppercase">Sobre a Sigmetal</span>
+            <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Sobre a Sigmetal</span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
               Referência em Serralheria Industrial
             </h2>
@@ -265,9 +265,9 @@ function AboutSection() {
               {values.map((v) => (
                 <div
                   key={v.title}
-                  className="group rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 hover:border-amber-500/40 transition-colors"
+                  className="group rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 hover:border-red-500/40 transition-colors"
                 >
-                  <v.icon className="h-6 w-6 text-amber-500 mb-3 group-hover:scale-110 transition-transform" />
+                  <v.icon className="h-6 w-6 text-red-500 mb-3 group-hover:scale-110 transition-transform" />
                   <h3 className="font-semibold text-zinc-100">{v.title}</h3>
                   <p className="mt-1 text-sm text-zinc-400 leading-relaxed">{v.desc}</p>
                 </div>
@@ -286,7 +286,7 @@ function AboutSection() {
             </div>
             <div className="absolute -bottom-6 -left-6 md:-left-10 bg-zinc-900 border border-zinc-800 rounded-xl p-5 shadow-xl max-w-[260px]">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/10 text-amber-500">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500/10 text-red-500">
                   <HardHat className="h-5 w-5" />
                 </div>
                 <div>
@@ -341,7 +341,7 @@ function ServicesSection() {
     <section id="quem-somos" className="relative py-24 sm:py-32 bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-amber-500 tracking-wider uppercase">Quem Somos</span>
+          <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Quem Somos</span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
             Soluções Completas em Metal
           </h2>
@@ -355,9 +355,9 @@ function ServicesSection() {
           {services.map((s) => (
             <div
               key={s.title}
-              className="group relative rounded-2xl border border-zinc-800 bg-zinc-950/50 p-8 hover:border-amber-500/30 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-500/5"
+              className="group relative rounded-2xl border border-zinc-800 bg-zinc-950/50 p-8 hover:border-red-500/30 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/5"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500 mb-5 group-hover:bg-amber-500 group-hover:text-zinc-950 transition-colors">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-red-500 mb-5 group-hover:bg-red-500 group-hover:text-zinc-950 transition-colors">
                 <s.icon className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-bold text-zinc-100">{s.title}</h3>
@@ -386,7 +386,7 @@ function ProjectsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <span className="text-sm font-semibold text-amber-500 tracking-wider uppercase">Portfólio</span>
+            <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Portfólio</span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
               Projetos Realizados
             </h2>
@@ -412,7 +412,7 @@ function ProjectsSection() {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end p-6">
-                <span className="inline-block w-fit rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-medium text-amber-400 mb-3">
+                <span className="inline-block w-fit rounded-full bg-red-500/10 border border-red-500/20 px-3 py-1 text-xs font-medium text-red-400 mb-3">
                   {p.category}
                 </span>
                 <h3 className="text-lg font-bold text-zinc-100">{p.title}</h3>
@@ -447,14 +447,14 @@ function ContactSection() {
   };
 
   const inputClass =
-    "w-full rounded-xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 transition-colors";
+    "w-full rounded-xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500 transition-colors";
 
   return (
     <section id="contato" className="relative py-24 sm:py-32 bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-16">
           <div className="lg:col-span-2">
-            <span className="text-sm font-semibold text-amber-500 tracking-wider uppercase">Contato</span>
+            <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Contato</span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
               Fale com a Sigmetal
             </h2>
@@ -464,29 +464,29 @@ function ContactSection() {
 
             <div className="mt-10 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-red-500">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="font-semibold text-zinc-100">Telefone</div>
-                  <a href="tel:+5511999999999" className="text-zinc-400 hover:text-amber-500 transition-colors">
+                  <a href="tel:+5511999999999" className="text-zinc-400 hover:text-red-500 transition-colors">
                     (11) 99999-9999
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-red-500">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="font-semibold text-zinc-100">E-mail</div>
-                  <a href="mailto:contato@sigmetal.com.br" className="text-zinc-400 hover:text-amber-500 transition-colors">
+                  <a href="mailto:contato@sigmetal.com.br" className="text-zinc-400 hover:text-red-500 transition-colors">
                     contato@sigmetal.com.br
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-red-500">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
@@ -496,7 +496,7 @@ function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-500/10 text-red-500">
                   <Clock className="h-5 w-5" />
                 </div>
                 <div>
@@ -567,7 +567,7 @@ function ContactSection() {
                   <button
                     type="submit"
                     disabled={sending}
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-amber-500 px-6 py-3.5 text-base font-bold text-zinc-950 hover:bg-amber-400 transition-colors disabled:opacity-60"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-red-500 px-6 py-3.5 text-base font-bold text-zinc-950 hover:bg-red-400 transition-colors disabled:opacity-60"
                   >
                     {sending ? (
                       <>
@@ -604,9 +604,9 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2">
-              <Factory className="h-6 w-6 text-amber-500" />
+              <Factory className="h-6 w-6 text-red-500" />
               <span className="text-lg font-bold">
-                SIG<span className="text-amber-500">METAL</span>
+                SIG<span className="text-red-500">METAL</span>
               </span>
             </div>
             <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
@@ -626,7 +626,7 @@ function Footer() {
                 <li key={l.id}>
                   <button
                     onClick={() => scrollTo(l.id)}
-                    className="text-sm text-zinc-400 hover:text-amber-500 transition-colors"
+                    className="text-sm text-zinc-400 hover:text-red-500 transition-colors"
                   >
                     {l.label}
                   </button>
