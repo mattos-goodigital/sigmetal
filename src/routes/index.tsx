@@ -425,10 +425,6 @@ function ProjectsSection() {
               Projetos Realizados
             </h2>
           </div>
-          <p className="text-zinc-400 max-w-md">
-            Uma seleção de obras que demonstram nossa capacidade de entregar desde estruturas simples
-            até complexas soluções industriais.
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
