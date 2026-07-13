@@ -286,6 +286,14 @@ function AboutSection() {
             </div>
           </div>
         </div>
+
+        {/* Empresas que confiam na Sigmetal */}
+        <div className="mt-24 sm:mt-32">
+          <h2 className="text-center text-2xl sm:text-3xl font-bold tracking-tight">
+            Empresas que confiam na Sigmetal
+          </h2>
+          <LogoCarousel />
+        </div>
       </div>
     </section>
   );
