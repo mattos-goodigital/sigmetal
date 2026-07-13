@@ -81,9 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Sigmetal: soluções em serralheria industrial, estruturas metálicas, solda e usinagem com qualidade e precisão." },
       { name: "author", content: "Sigmetal" },
       { property: "og:title", content: "Sigmetal — Serralheria Industrial" },
-      { property: "og:description", content: "Soluções em serralheria industrial, estruturas metálicas, solda e usinagem com qualidade e precisão." },
+      { property: "og:description", content: "Sigmetal: soluções em serralheria industrial, estruturas metálicas, solda e usinagem com qualidade e precisão." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sigmetal — Serralheria Industrial" },
+      { name: "twitter:description", content: "Sigmetal: soluções em serralheria industrial, estruturas metálicas, solda e usinagem com qualidade e precisão." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c891094b-aa91-4b7b-bb7a-553f09ea288e/id-preview-738bbb82--99e49c88-404f-43e9-bcf5-1b68402a940e.lovable.app-1783969726653.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c891094b-aa91-4b7b-bb7a-553f09ea288e/id-preview-738bbb82--99e49c88-404f-43e9-bcf5-1b68402a940e.lovable.app-1783969726653.png" },
     ],
     links: [
       {
