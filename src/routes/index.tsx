@@ -692,8 +692,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-          <p>
+        <div className="mt-16 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-zinc-500">
+          <p className="text-center">
             © {new Date().getFullYear()} Sigmetal. Todos os direitos reservados. Desenvolvido por B2City, com precisão industrial.
           </p>
         </div>
