@@ -286,8 +286,53 @@ function AboutSection() {
             </div>
           </div>
         </div>
+
+        {/* Empresas que confiam na Sigmetal */}
+        <div className="mt-24 sm:mt-32">
+          <h2 className="text-center text-2xl sm:text-3xl font-bold tracking-tight">
+            Empresas que confiam na Sigmetal
+          </h2>
+          <LogoCarousel />
+        </div>
       </div>
     </section>
+  );
+}
+
+/* ─── Logo Carousel ─── */
+function LogoCarousel() {
+  const logos = [
+    { name: "MetalBras" },
+    { name: "Indústrias Silva" },
+    { name: "Construtora Horizonte" },
+    { name: "Grupo Ferraz" },
+    { name: "Engenharia Norte" },
+    { name: "Aço & Cia" },
+    { name: "Shopping Centro-Oeste" },
+    { name: "Logística Pesada" },
+    { name: "Portos do Brasil" },
+    { name: "Mineração Atlas" },
+    { name: "Indústria Alimentícia Prima" },
+    { name: "Tecnometal" },
+  ];
+
+  const track = [...logos, ...logos];
+
+  return (
+    <div className="mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+      <div className="flex w-max animate-carousel-scroll hover:[animation-play-state:paused]">
+        {track.map((logo, idx) => (
+          <div
+            key={`${logo.name}-${idx}`}
+            className="flex h-20 w-56 shrink-0 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900/60 px-6 mx-3"
+          >
+            <span className="text-center text-base font-semibold text-zinc-300 tracking-tight">
+              {logo.name}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

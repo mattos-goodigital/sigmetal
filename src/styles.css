@@ -1,4 +1,24 @@
 @import "tailwindcss" source(none);
+
+/* Logo carousel infinite scroll */
+@keyframes carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel-scroll {
+  animation: carousel-scroll 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-carousel-scroll {
+    animation: none;
+  }
+}
 @source "../src";
 @import "tw-animate-css";
 
