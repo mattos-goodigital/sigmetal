@@ -161,10 +161,10 @@ function HeroSection() {
         <img
           src={bannerAsset.url}
           alt="Soldagem industrial Sigmetal"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover brightness-110 contrast-105"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-zinc-950/70" />
+        <div className="absolute inset-0 bg-zinc-950/55" />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
       </div>
 
