@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import bannerAsset from "@/assets/banner-site-sigmetal.jpg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
@@ -158,8 +159,8 @@ function HeroSection() {
     <section id="hero" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/hero-serralheria.jpg"
-          alt="Oficina industrial Sigmetal"
+          src={bannerAsset.url}
+          alt="Soldagem industrial Sigmetal"
           className="h-full w-full object-cover"
           loading="eager"
         />
