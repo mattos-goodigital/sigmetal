@@ -8,7 +8,7 @@ import hitachiLogo from "@/assets/logos/hitachi.png.asset.json";
 import krempelLogo from "@/assets/logos/krempel.svg.asset.json";
 import ulianaLogo from "@/assets/logos/uliana.png.asset.json";
 import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg.asset.json";
-import cooperLogo from "@/assets/logos/cooper.jpg.asset.json";
+import cooperLogo from "@/assets/logos/cooper.png.asset.json";
 import copobrasLogo from "@/assets/logos/copobras.png.asset.json";
 import naturaLogo from "@/assets/logos/natura.png.asset.json";
 import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
@@ -436,13 +436,15 @@ function LogoCarousel() {
         {track.map((logo, idx) => (
           <div
             key={`${logo.name}-${idx}`}
-            className="flex h-24 w-48 shrink-0 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 px-6 mx-3"
+            className="flex h-24 w-48 shrink-0 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 px-4 mx-3"
           >
             <img
               src={logo.src}
               alt={logo.name}
               loading="lazy"
-              className="max-h-14 max-w-full object-contain grayscale opacity-80 hover:opacity-100 transition-opacity"
+              className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
+                logo.name === "Cooper" ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
+              }`}
             />
           </div>
         ))}
