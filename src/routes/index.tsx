@@ -407,12 +407,16 @@ type CategoryId = (typeof CATEGORIES)[number]["id"];
 
 const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
   // Proteção de Máquinas NR12
-  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 1" },
-  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 2" },
-  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 3" },
-  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 4" },
-  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 5" },
-  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 6" },
+  { id: "nr12", src: nr12_1.url, alt: "Proteção de máquinas NR12 - projeto 1" },
+  { id: "nr12", src: nr12_2.url, alt: "Proteção de máquinas NR12 - projeto 2" },
+  { id: "nr12", src: nr12_3.url, alt: "Proteção de máquinas NR12 - projeto 3" },
+  { id: "nr12", src: nr12_4.url, alt: "Proteção de máquinas NR12 - projeto 4" },
+  { id: "nr12", src: nr12_5.url, alt: "Proteção de máquinas NR12 - projeto 5" },
+  { id: "nr12", src: nr12_6.url, alt: "Proteção de máquinas NR12 - projeto 6" },
+  { id: "nr12", src: nr12_7.url, alt: "Proteção de máquinas NR12 - projeto 7" },
+  { id: "nr12", src: nr12_8.url, alt: "Proteção de máquinas NR12 - projeto 8" },
+  { id: "nr12", src: nr12_9.url, alt: "Proteção de máquinas NR12 - projeto 9" },
+  { id: "nr12", src: nr12_10.url, alt: "Proteção de máquinas NR12 - projeto 10" },
   // Serralheria Industrial
   { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 1" },
   { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 2" },
