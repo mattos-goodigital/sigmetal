@@ -426,14 +426,14 @@ function LogoCarousel() {
   const logos = [
     { name: "Bombril", src: bombrilLogo.url, xl: true },
     { name: "Cummins Meritor", src: cumminsMeritorLogo.url, xl: true },
-    { name: "Drylock Technologies", src: drylockLogo.url, xl: true },
+    { name: "Drylock Technologies", src: drylockLogo.url, xxl: true },
     { name: "Hitachi", src: hitachiLogo.url },
     { name: "Krempel", src: krempelLogo.url },
     { name: "Uliana", src: ulianaLogo.url },
     { name: "DSM-Firmenich", src: dsmFirmenichLogo.url },
     { name: "Cooper", src: cooperLogo.url, large: true },
     { name: "Copobras", src: copobrasLogo.url },
-    { name: "Natura", src: naturaLogo.url, large: true },
+    { name: "Natura", src: naturaLogo.url, xl: true },
     { name: "Saint-Gobain", src: saintGobainLogo.url },
     { name: "Mahle", src: mahleLogo.url },
     { name: "Mauser Packaging", src: mauserLogo.url },
@@ -456,7 +456,7 @@ function LogoCarousel() {
             alt={logo.name}
             loading="lazy"
             className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
-              logo.xl ? "max-h-24 max-w-[210px]" : logo.large ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
+              logo.xxl ? "max-h-24 max-w-[260px]" : logo.xl ? "max-h-24 max-w-[210px]" : logo.large ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
             }`}
           />
         </div>
