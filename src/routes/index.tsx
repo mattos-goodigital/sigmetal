@@ -535,6 +535,7 @@ function ProjectsSection() {
               onClick={() => {
                 setActiveCategory(cat.id);
                 setLightboxIndex(null);
+                setVisibleCount(6);
               }}
               className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all border ${
                 activeCategory === cat.id
