@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal.jpg.asset.json";
+import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
 import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
 import nr12_2 from "@/assets/nr12/nr12-2.jpeg.asset.json";
 import nr12_3 from "@/assets/nr12/nr12-3.jpeg.asset.json";
@@ -376,7 +377,7 @@ function AboutSection() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800">
               <img
-                src="/hero-serralheria.jpg"
+                src={sobreSerralheria.url}
                 alt="Trabalho industrial Sigmetal"
                 className="h-full w-full object-cover opacity-80"
                 loading="lazy"
