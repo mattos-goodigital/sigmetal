@@ -443,7 +443,7 @@ function LogoCarousel() {
               alt={logo.name}
               loading="lazy"
               className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
-                logo.name === "Cooper" ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
+                logo.name === "Cooper" || logo.name === "Cummins Meritor" ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
               }`}
             />
           </div>
