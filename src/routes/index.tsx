@@ -433,7 +433,7 @@ function LogoCarousel() {
     { name: "DSM-Firmenich", src: dsmFirmenichLogo.url },
     { name: "Cooper", src: cooperLogo.url, large: true },
     { name: "Copobras", src: copobrasLogo.url },
-    { name: "Natura", src: naturaLogo.url, large: true },
+    { name: "Natura", src: naturaLogo.url, xl: true },
     { name: "Saint-Gobain", src: saintGobainLogo.url },
     { name: "Mahle", src: mahleLogo.url },
     { name: "Mauser Packaging", src: mauserLogo.url },
