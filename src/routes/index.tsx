@@ -441,6 +441,7 @@ function LogoCarousel() {
     { name: "Absafe Group", src: absafeLogo.url },
     { name: "Tecfil", src: tecfilLogo.url },
     { name: "Tectool", src: tectoolLogo.url },
+    { name: "Planen Automação", src: planenLogo.url, large: true },
   ];
 
   return (
