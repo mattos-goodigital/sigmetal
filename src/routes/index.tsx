@@ -374,7 +374,7 @@ function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-zinc-800">
+            <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800">
               <img
                 src="/hero-serralheria.jpg"
                 alt="Trabalho industrial Sigmetal"
