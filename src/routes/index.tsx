@@ -206,6 +206,16 @@ function HeroSection() {
             Ver Projetos
             <ChevronRight className="h-5 w-5" />
           </a>
+          <a
+            href="#contato"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-transparent px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all"
+          >
+            Vistoria
+          </a>
         </div>
       </div>
     </section>
