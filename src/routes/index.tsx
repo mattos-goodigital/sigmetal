@@ -500,6 +500,16 @@ const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
   { id: "industrial", src: serralheria_8.url, alt: "Serralheria industrial - projeto 8" },
   { id: "industrial", src: serralheria_9.url, alt: "Serralheria industrial - projeto 9" },
   { id: "industrial", src: serralheria_10.url, alt: "Serralheria industrial - projeto 10" },
+  { id: "industrial", src: serralheria_11.url, alt: "Serralheria industrial - projeto 11" },
+  { id: "industrial", src: serralheria_12.url, alt: "Serralheria industrial - projeto 12" },
+  { id: "industrial", src: serralheria_13.url, alt: "Serralheria industrial - projeto 13" },
+  { id: "industrial", src: serralheria_14.url, alt: "Serralheria industrial - projeto 14" },
+  { id: "industrial", src: serralheria_15.url, alt: "Serralheria industrial - projeto 15" },
+  { id: "industrial", src: serralheria_16.url, alt: "Serralheria industrial - projeto 16" },
+  { id: "industrial", src: serralheria_17.url, alt: "Serralheria industrial - projeto 17" },
+  { id: "industrial", src: serralheria_18.url, alt: "Serralheria industrial - projeto 18" },
+  { id: "industrial", src: serralheria_19.url, alt: "Serralheria industrial - projeto 19" },
+  { id: "industrial", src: serralheria_20.url, alt: "Serralheria industrial - projeto 20" },
 ];
 
 function ProjectsSection() {
