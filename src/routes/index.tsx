@@ -86,6 +86,16 @@ import serralheria_47 from "@/assets/serralheria/serralheria-47.jpeg.asset.json"
 import serralheria_48 from "@/assets/serralheria/serralheria-48.jpeg.asset.json";
 import serralheria_49 from "@/assets/serralheria/serralheria-49.jpeg.asset.json";
 import serralheria_50 from "@/assets/serralheria/serralheria-50.jpeg.asset.json";
+import serralheria_51 from "@/assets/serralheria/serralheria-51.jpeg.asset.json";
+import serralheria_52 from "@/assets/serralheria/serralheria-52.jpeg.asset.json";
+import serralheria_53 from "@/assets/serralheria/serralheria-53.jpeg.asset.json";
+import serralheria_54 from "@/assets/serralheria/serralheria-54.jpeg.asset.json";
+import serralheria_55 from "@/assets/serralheria/serralheria-55.jpeg.asset.json";
+import serralheria_56 from "@/assets/serralheria/serralheria-56.jpeg.asset.json";
+import serralheria_57 from "@/assets/serralheria/serralheria-57.jpeg.asset.json";
+import serralheria_58 from "@/assets/serralheria/serralheria-58.jpeg.asset.json";
+import serralheria_59 from "@/assets/serralheria/serralheria-59.jpeg.asset.json";
+import serralheria_60 from "@/assets/serralheria/serralheria-60.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
