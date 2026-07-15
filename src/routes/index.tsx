@@ -481,8 +481,11 @@ const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
 function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState<CategoryId>("nr12");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const filteredItems = PORTFOLIO_ITEMS.filter((item) => item.id === activeCategory);
+  const visibleItems = filteredItems.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredItems.length;
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
