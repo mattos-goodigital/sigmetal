@@ -550,7 +550,7 @@ function ProjectsSection() {
 
         {/* Photo grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredItems.map((item, index) => (
+          {visibleItems.map((item, index) => (
             <button
               key={`${item.id}-${index}`}
               onClick={() => openLightbox(index)}
@@ -572,6 +572,17 @@ function ProjectsSection() {
             </button>
           ))}
         </div>
+
+        {hasMore && (
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={() => setVisibleCount((c) => c + 6)}
+              className="rounded-full bg-red-500 px-8 py-3 text-sm font-semibold text-zinc-950 hover:bg-red-400 transition-colors"
+            >
+              Ver mais
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox */}
