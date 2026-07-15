@@ -449,7 +449,7 @@ function LogoCarousel() {
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className={`flex h-16 sm:h-24 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 overflow-hidden ${
+          className={`flex h-24 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 overflow-hidden ${
             logo.mega ? "px-1" : "px-4"
           }`}
         >
