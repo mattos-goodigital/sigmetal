@@ -50,7 +50,9 @@ function LandingPage() {
       <StatsBar />
       <AboutSection />
       <ServicesSection />
+      <BlogSection />
       <ProjectsSection />
+
       <ContactSection />
       <Footer />
       <BackToTop />
@@ -78,9 +80,11 @@ function Navbar() {
   const links = [
     { label: "Sobre", id: "sobre" },
     { label: "Quem Somos", id: "quem-somos" },
+    { label: "Blog", id: "blog" },
     { label: "Projetos", id: "projetos" },
     { label: "Contato", id: "contato" },
   ];
+
 
   return (
     <nav
@@ -404,6 +408,77 @@ function ServicesSection() {
     </section>
   );
 }
+
+/* ─── Blog ─── */
+const BLOG_POSTS = [
+  {
+    tag: "NR12",
+    date: "10 Jul 2026",
+    title: "NR12: como garantir a conformidade na proteção de máquinas",
+    excerpt:
+      "Entenda os principais pontos da norma regulamentadora e como uma proteção bem projetada reduz riscos e paradas na sua operação.",
+  },
+  {
+    tag: "Serralheria",
+    date: "28 Jun 2026",
+    title: "Estruturas metálicas industriais: quando escolher aço carbono ou inox",
+    excerpt:
+      "Comparativo prático entre materiais mais usados em serralheria industrial, com foco em custo, durabilidade e ambiente de instalação.",
+  },
+  {
+    tag: "Projetos",
+    date: "15 Jun 2026",
+    title: "Do projeto ao acabamento: as etapas de uma obra sob medida",
+    excerpt:
+      "Um passo a passo do fluxo Sigmetal, do levantamento técnico à instalação final, garantindo prazo, qualidade e segurança.",
+  },
+];
+
+function BlogSection() {
+  return (
+    <section id="blog" className="relative py-24 sm:py-32 bg-zinc-950">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Blog</span>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
+            Conteúdos e Novidades
+          </h2>
+          <p className="mt-4 text-lg text-zinc-400">
+            Artigos técnicos, dicas de segurança e novidades do universo da serralheria industrial.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {BLOG_POSTS.map((post) => (
+            <article
+              key={post.title}
+              className="group flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8 hover:border-red-500/30 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/5"
+            >
+              <div className="flex items-center gap-3 text-xs">
+                <span className="rounded-full bg-red-500/10 text-red-500 px-3 py-1 font-semibold uppercase tracking-wider">
+                  {post.tag}
+                </span>
+                <span className="text-zinc-500">{post.date}</span>
+              </div>
+              <h3 className="mt-5 text-xl font-bold text-zinc-100 leading-snug group-hover:text-red-400 transition-colors">
+                {post.title}
+              </h3>
+              <p className="mt-3 text-zinc-400 leading-relaxed flex-1">{post.excerpt}</p>
+              <button
+                type="button"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-red-500 hover:text-red-400 transition-colors self-start"
+              >
+                Ler mais
+                <span aria-hidden>→</span>
+              </button>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 /* ─── Projects ─── */
 const CATEGORIES = [
@@ -798,9 +873,11 @@ function Footer() {
               {[
                 { label: "Sobre", id: "sobre" },
                 { label: "Quem Somos", id: "quem-somos" },
+                { label: "Blog", id: "blog" },
                 { label: "Projetos", id: "projetos" },
                 { label: "Contato", id: "contato" },
               ].map((l) => (
+
                 <li key={l.id}>
                   <button
                     onClick={() => scrollTo(l.id)}
