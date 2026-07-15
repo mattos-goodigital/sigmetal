@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
 import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
-import bombrilLogo from "@/assets/logos/bombril.webp.asset.json";
-import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.jpg.asset.json";
+import bombrilLogo from "@/assets/logos/bombril.png.asset.json";
+import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png.asset.json";
 import drylockLogo from "@/assets/logos/drylock.svg.asset.json";
 import hitachiLogo from "@/assets/logos/hitachi.png.asset.json";
 import krempelLogo from "@/assets/logos/krempel.svg.asset.json";
