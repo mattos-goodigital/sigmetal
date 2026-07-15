@@ -1,5 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal.jpg.asset.json";
+import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
+import nr12_2 from "@/assets/nr12/nr12-2.jpeg.asset.json";
+import nr12_3 from "@/assets/nr12/nr12-3.jpeg.asset.json";
+import nr12_4 from "@/assets/nr12/nr12-4.jpeg.asset.json";
+import nr12_5 from "@/assets/nr12/nr12-5.jpeg.asset.json";
+import nr12_6 from "@/assets/nr12/nr12-6.jpeg.asset.json";
+import nr12_7 from "@/assets/nr12/nr12-7.jpeg.asset.json";
+import nr12_8 from "@/assets/nr12/nr12-8.jpeg.asset.json";
+import nr12_9 from "@/assets/nr12/nr12-9.jpeg.asset.json";
+import nr12_10 from "@/assets/nr12/nr12-10.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
