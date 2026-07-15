@@ -118,6 +118,7 @@ import {
   HardHat,
   Users,
   Zap,
+  Expand,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
