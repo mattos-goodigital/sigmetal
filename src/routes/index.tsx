@@ -11,6 +11,13 @@ import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg.asset.json";
 import cooperLogo from "@/assets/logos/cooper.png.asset.json";
 import copobrasLogo from "@/assets/logos/copobras.png.asset.json";
 import naturaLogo from "@/assets/logos/natura.png.asset.json";
+import absafeLogo from "@/assets/logos/absafe.png.asset.json";
+import emersonLogo from "@/assets/logos/emerson.png.asset.json";
+import mahleLogo from "@/assets/logos/mahle.png.asset.json";
+import mauserLogo from "@/assets/logos/mauser.png.asset.json";
+import saintGobainLogo from "@/assets/logos/saint-gobain.svg.asset.json";
+import tecfilLogo from "@/assets/logos/tecfil.svg.asset.json";
+import tectoolLogo from "@/assets/logos/tectool.png.asset.json";
 import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
 import nr12_2 from "@/assets/nr12/nr12-2.jpeg.asset.json";
 import nr12_3 from "@/assets/nr12/nr12-3.jpeg.asset.json";
@@ -417,38 +424,41 @@ function AboutSection() {
 function LogoCarousel() {
   const logos = [
     { name: "Bombril", src: bombrilLogo.url },
-    { name: "Cummins Meritor", src: cumminsMeritorLogo.url },
+    { name: "Cummins Meritor", src: cumminsMeritorLogo.url, large: true },
     { name: "Drylock Technologies", src: drylockLogo.url },
     { name: "Hitachi", src: hitachiLogo.url },
     { name: "Krempel", src: krempelLogo.url },
     { name: "Uliana", src: ulianaLogo.url },
     { name: "DSM-Firmenich", src: dsmFirmenichLogo.url },
-    { name: "Cooper", src: cooperLogo.url },
+    { name: "Cooper", src: cooperLogo.url, large: true },
     { name: "Copobras", src: copobrasLogo.url },
     { name: "Natura", src: naturaLogo.url },
+    { name: "Saint-Gobain", src: saintGobainLogo.url },
+    { name: "Mahle", src: mahleLogo.url },
+    { name: "Mauser Packaging", src: mauserLogo.url },
+    { name: "Emerson", src: emersonLogo.url },
+    { name: "Absafe Group", src: absafeLogo.url },
+    { name: "Tecfil", src: tecfilLogo.url },
+    { name: "Tectool", src: tectoolLogo.url },
   ];
 
-  const track = [...logos, ...logos];
-
   return (
-    <div className="mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-      <div className="flex w-max animate-carousel-scroll hover:[animation-play-state:paused]">
-        {track.map((logo, idx) => (
-          <div
-            key={`${logo.name}-${idx}`}
-            className="flex h-24 w-48 shrink-0 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 px-4 mx-3"
-          >
-            <img
-              src={logo.src}
-              alt={logo.name}
-              loading="lazy"
-              className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
-                logo.name === "Cooper" || logo.name === "Cummins Meritor" ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
-              }`}
-            />
-          </div>
-        ))}
-      </div>
+    <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      {logos.map((logo) => (
+        <div
+          key={logo.name}
+          className="flex h-24 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 px-4"
+        >
+          <img
+            src={logo.src}
+            alt={logo.name}
+            loading="lazy"
+            className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
+              logo.large ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
+            }`}
+          />
+        </div>
+      ))}
     </div>
   );
 }
