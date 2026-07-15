@@ -11,6 +11,7 @@ import {
   Shield,
   Award,
   Wrench,
+  ChevronLeft,
   ChevronRight,
   Send,
   ArrowUp,
@@ -405,20 +406,68 @@ function ServicesSection() {
 }
 
 /* ─── Projects ─── */
+const CATEGORIES = [
+  { id: "nr12", label: "Proteção de Máquinas NR12" },
+  { id: "industrial", label: "Serralheria Industrial" },
+] as const;
+
+type CategoryId = (typeof CATEGORIES)[number]["id"];
+
+const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
+  // Proteção de Máquinas NR12
+  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 1" },
+  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 2" },
+  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 3" },
+  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 4" },
+  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 5" },
+  { id: "nr12", src: bannerAsset.url, alt: "Proteção de máquinas NR12 - projeto 6" },
+  // Serralheria Industrial
+  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 1" },
+  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 2" },
+  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 3" },
+  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 4" },
+  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 5" },
+  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 6" },
+];
+
 function ProjectsSection() {
-  const projects = [
-    { title: "Galpão Industrial 2.400m²", category: "Estrutura Metálica", location: "São Paulo, SP" },
-    { title: "Mezanino Comercial", category: "Estrutura Interna", location: "Campinas, SP" },
-    { title: "Portão Industrial Automatizado", category: "Portões e Acessórios", location: "Sorocaba, SP" },
-    { title: "Cobertura Metálica Shopping", category: "Coberturas", location: "Ribeirão Preto, SP" },
-    { title: "Estrutura de Elevado", category: "Infraestrutura", location: "São José dos Campos, SP" },
-    { title: "Grade de Segurança Industrial", category: "Segurança", location: "Jundiaí, SP" },
-  ];
+  const [activeCategory, setActiveCategory] = useState<CategoryId>("nr12");
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const filteredItems = PORTFOLIO_ITEMS.filter((item) => item.id === activeCategory);
+
+  const openLightbox = (index: number) => setLightboxIndex(index);
+  const closeLightbox = () => setLightboxIndex(null);
+
+  const goPrev = () => {
+    if (lightboxIndex === null) return;
+    setLightboxIndex((prev) => (prev === null ? null : prev === 0 ? filteredItems.length - 1 : prev - 1));
+  };
+
+  const goNext = () => {
+    if (lightboxIndex === null) return;
+    setLightboxIndex((prev) => (prev === null ? null : prev === filteredItems.length - 1 ? 0 : prev + 1));
+  };
+
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [lightboxIndex, filteredItems.length]);
 
   return (
     <section id="projetos" className="relative py-24 sm:py-32 bg-zinc-950">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
             <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Portfólio</span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
@@ -427,35 +476,134 @@ function ProjectsSection() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p, i) => (
-            <div
-              key={p.title}
-              className="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900"
+        {/* Category tabs */}
+        <div className="flex flex-wrap gap-3 mb-10">
+          {CATEGORIES.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => {
+                setActiveCategory(cat.id);
+                setLightboxIndex(null);
+              }}
+              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all border ${
+                activeCategory === cat.id
+                  ? "bg-red-500 border-red-500 text-zinc-950"
+                  : "bg-zinc-900 border-zinc-800 text-zinc-300 hover:border-red-500/40 hover:text-red-400"
+              }`}
             >
-              <div className="aspect-[4/3] overflow-hidden bg-zinc-800">
-                <img
-                  src="/hero-serralheria.jpg"
-                  alt={p.title}
-                  className="h-full w-full object-cover opacity-60 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500"
-                  loading="lazy"
-                />
-              </div>
-              <div className="absolute inset-0 flex flex-col justify-end p-6">
-                <span className="inline-block w-fit rounded-full bg-red-500/10 border border-red-500/20 px-3 py-1 text-xs font-medium text-red-400 mb-3">
-                  {p.category}
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Photo grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {filteredItems.map((item, index) => (
+            <button
+              key={`${item.id}-${index}`}
+              onClick={() => openLightbox(index)}
+              className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 text-left focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-zinc-950"
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-zinc-950/0 group-hover:bg-zinc-950/20 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-zinc-950">
+                  Ampliar
+                  <ChevronRight className="h-4 w-4" />
                 </span>
-                <h3 className="text-lg font-bold text-zinc-100">{p.title}</h3>
-                <div className="mt-2 flex items-center gap-1.5 text-sm text-zinc-400">
-                  <MapPin className="h-3.5 w-3.5" />
-                  {p.location}
-                </div>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
+
+      {/* Lightbox */}
+      {lightboxIndex !== null && (
+        <Lightbox
+          item={filteredItems[lightboxIndex]}
+          currentIndex={lightboxIndex}
+          total={filteredItems.length}
+          onClose={closeLightbox}
+          onPrev={goPrev}
+          onNext={goNext}
+        />
+      )}
     </section>
+  );
+}
+
+/* ─── Lightbox ─── */
+function Lightbox({
+  item,
+  currentIndex,
+  total,
+  onClose,
+  onPrev,
+  onNext,
+}: {
+  item: { src: string; alt: string };
+  currentIndex: number;
+  total: number;
+  onClose: () => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-950/95 backdrop-blur-md p-4"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+    >
+      <button
+        onClick={onClose}
+        className="absolute top-5 right-5 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors"
+        aria-label="Fechar lightbox"
+      >
+        <X className="h-5 w-5" />
+      </button>
+
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          onPrev();
+        }}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors disabled:opacity-40"
+        aria-label="Foto anterior"
+      >
+        <ChevronLeft className="h-5 w-5" />
+      </button>
+
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          onNext();
+        }}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors disabled:opacity-40"
+        aria-label="Próxima foto"
+      >
+        <ChevronRight className="h-5 w-5" />
+      </button>
+
+      <div
+        className="relative max-h-[85vh] max-w-6xl w-full"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <img
+          src={item.src}
+          alt={item.alt}
+          className="max-h-[85vh] w-full object-contain rounded-xl"
+        />
+        <div className="absolute -bottom-10 left-0 right-0 text-center text-sm text-zinc-400">
+          {currentIndex + 1} / {total}
+        </div>
+      </div>
+    </div>
   );
 }
 
