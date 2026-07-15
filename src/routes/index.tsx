@@ -78,9 +78,11 @@ function Navbar() {
   const links = [
     { label: "Sobre", id: "sobre" },
     { label: "Quem Somos", id: "quem-somos" },
+    { label: "Blog", id: "blog" },
     { label: "Projetos", id: "projetos" },
     { label: "Contato", id: "contato" },
   ];
+
 
   return (
     <nav
