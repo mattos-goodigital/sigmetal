@@ -10,6 +10,16 @@ import nr12_7 from "@/assets/nr12/nr12-7.jpeg.asset.json";
 import nr12_8 from "@/assets/nr12/nr12-8.jpeg.asset.json";
 import nr12_9 from "@/assets/nr12/nr12-9.jpeg.asset.json";
 import nr12_10 from "@/assets/nr12/nr12-10.jpeg.asset.json";
+import nr12_11 from "@/assets/nr12/nr12-11.jpeg.asset.json";
+import nr12_12 from "@/assets/nr12/nr12-12.jpeg.asset.json";
+import nr12_13 from "@/assets/nr12/nr12-13.jpeg.asset.json";
+import nr12_14 from "@/assets/nr12/nr12-14.jpeg.asset.json";
+import nr12_15 from "@/assets/nr12/nr12-15.jpeg.asset.json";
+import nr12_16 from "@/assets/nr12/nr12-16.jpeg.asset.json";
+import nr12_17 from "@/assets/nr12/nr12-17.jpeg.asset.json";
+import nr12_18 from "@/assets/nr12/nr12-18.jpeg.asset.json";
+import nr12_19 from "@/assets/nr12/nr12-19.jpeg.asset.json";
+import nr12_20 from "@/assets/nr12/nr12-20.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
@@ -417,6 +427,16 @@ const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
   { id: "nr12", src: nr12_8.url, alt: "Proteção de máquinas NR12 - projeto 8" },
   { id: "nr12", src: nr12_9.url, alt: "Proteção de máquinas NR12 - projeto 9" },
   { id: "nr12", src: nr12_10.url, alt: "Proteção de máquinas NR12 - projeto 10" },
+  { id: "nr12", src: nr12_11.url, alt: "Proteção de máquinas NR12 - projeto 11" },
+  { id: "nr12", src: nr12_12.url, alt: "Proteção de máquinas NR12 - projeto 12" },
+  { id: "nr12", src: nr12_13.url, alt: "Proteção de máquinas NR12 - projeto 13" },
+  { id: "nr12", src: nr12_14.url, alt: "Proteção de máquinas NR12 - projeto 14" },
+  { id: "nr12", src: nr12_15.url, alt: "Proteção de máquinas NR12 - projeto 15" },
+  { id: "nr12", src: nr12_16.url, alt: "Proteção de máquinas NR12 - projeto 16" },
+  { id: "nr12", src: nr12_17.url, alt: "Proteção de máquinas NR12 - projeto 17" },
+  { id: "nr12", src: nr12_18.url, alt: "Proteção de máquinas NR12 - projeto 18" },
+  { id: "nr12", src: nr12_19.url, alt: "Proteção de máquinas NR12 - projeto 19" },
+  { id: "nr12", src: nr12_20.url, alt: "Proteção de máquinas NR12 - projeto 20" },
   // Serralheria Industrial
   { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 1" },
   { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 2" },
