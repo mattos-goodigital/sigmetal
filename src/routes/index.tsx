@@ -30,6 +30,12 @@ import nr12_27 from "@/assets/nr12/nr12-27.jpeg.asset.json";
 import nr12_28 from "@/assets/nr12/nr12-28.jpeg.asset.json";
 import nr12_29 from "@/assets/nr12/nr12-29.jpeg.asset.json";
 import nr12_30 from "@/assets/nr12/nr12-30.jpeg.asset.json";
+import nr12_31 from "@/assets/nr12/nr12-31.jpeg.asset.json";
+import nr12_32 from "@/assets/nr12/nr12-32.jpeg.asset.json";
+import nr12_33 from "@/assets/nr12/nr12-33.jpeg.asset.json";
+import nr12_34 from "@/assets/nr12/nr12-34.jpeg.asset.json";
+import nr12_35 from "@/assets/nr12/nr12-35.jpeg.asset.json";
+import nr12_36 from "@/assets/nr12/nr12-36.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
