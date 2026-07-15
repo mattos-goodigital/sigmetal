@@ -10,6 +10,16 @@ import nr12_7 from "@/assets/nr12/nr12-7.jpeg.asset.json";
 import nr12_8 from "@/assets/nr12/nr12-8.jpeg.asset.json";
 import nr12_9 from "@/assets/nr12/nr12-9.jpeg.asset.json";
 import nr12_10 from "@/assets/nr12/nr12-10.jpeg.asset.json";
+import nr12_11 from "@/assets/nr12/nr12-11.jpeg.asset.json";
+import nr12_12 from "@/assets/nr12/nr12-12.jpeg.asset.json";
+import nr12_13 from "@/assets/nr12/nr12-13.jpeg.asset.json";
+import nr12_14 from "@/assets/nr12/nr12-14.jpeg.asset.json";
+import nr12_15 from "@/assets/nr12/nr12-15.jpeg.asset.json";
+import nr12_16 from "@/assets/nr12/nr12-16.jpeg.asset.json";
+import nr12_17 from "@/assets/nr12/nr12-17.jpeg.asset.json";
+import nr12_18 from "@/assets/nr12/nr12-18.jpeg.asset.json";
+import nr12_19 from "@/assets/nr12/nr12-19.jpeg.asset.json";
+import nr12_20 from "@/assets/nr12/nr12-20.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
