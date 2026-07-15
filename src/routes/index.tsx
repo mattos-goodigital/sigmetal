@@ -480,12 +480,16 @@ const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
   { id: "nr12", src: nr12_35.url, alt: "Proteção de máquinas NR12 - projeto 35" },
   { id: "nr12", src: nr12_36.url, alt: "Proteção de máquinas NR12 - projeto 36" },
   // Serralheria Industrial
-  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 1" },
-  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 2" },
-  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 3" },
-  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 4" },
-  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 5" },
-  { id: "industrial", src: bannerAsset.url, alt: "Serralheria industrial - projeto 6" },
+  { id: "industrial", src: serralheria_1.url, alt: "Serralheria industrial - projeto 1" },
+  { id: "industrial", src: serralheria_2.url, alt: "Serralheria industrial - projeto 2" },
+  { id: "industrial", src: serralheria_3.url, alt: "Serralheria industrial - projeto 3" },
+  { id: "industrial", src: serralheria_4.url, alt: "Serralheria industrial - projeto 4" },
+  { id: "industrial", src: serralheria_5.url, alt: "Serralheria industrial - projeto 5" },
+  { id: "industrial", src: serralheria_6.url, alt: "Serralheria industrial - projeto 6" },
+  { id: "industrial", src: serralheria_7.url, alt: "Serralheria industrial - projeto 7" },
+  { id: "industrial", src: serralheria_8.url, alt: "Serralheria industrial - projeto 8" },
+  { id: "industrial", src: serralheria_9.url, alt: "Serralheria industrial - projeto 9" },
+  { id: "industrial", src: serralheria_10.url, alt: "Serralheria industrial - projeto 10" },
 ];
 
 function ProjectsSection() {
