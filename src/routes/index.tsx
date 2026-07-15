@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bannerAsset from "@/assets/banner-site-sigmetal-2.jpg.asset.json";
+import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
 import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
 import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
 import nr12_2 from "@/assets/nr12/nr12-2.jpeg.asset.json";
