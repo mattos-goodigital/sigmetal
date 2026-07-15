@@ -677,13 +677,10 @@ function ProjectsSection() {
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-zinc-950/0 group-hover:bg-zinc-950/20 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-zinc-950">
-                  Ampliar
-                  <ChevronRight className="h-4 w-4" />
-                </span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute bottom-3 right-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-zinc-950/70 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ring-1 ring-white/10" aria-hidden="true">
+                <Expand className="h-4 w-4" />
+              </span>
             </button>
           ))}
         </div>
