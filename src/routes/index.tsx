@@ -426,12 +426,12 @@ function LogoCarousel() {
   const logos = [
     { name: "Bombril", src: bombrilLogo.url, xl: true },
     { name: "Cummins Meritor", src: cumminsMeritorLogo.url, xl: true },
-    { name: "Drylock Technologies", src: drylockLogo.url, xxl: true },
+    { name: "Drylock Technologies", src: drylockLogo.url, mega: true },
     { name: "Hitachi", src: hitachiLogo.url },
     { name: "Krempel", src: krempelLogo.url },
     { name: "Uliana", src: ulianaLogo.url },
     { name: "DSM-Firmenich", src: dsmFirmenichLogo.url },
-    { name: "Cooper", src: cooperLogo.url, large: true },
+    { name: "Cooper", src: cooperLogo.url },
     { name: "Copobras", src: copobrasLogo.url },
     { name: "Natura", src: naturaLogo.url, xl: true },
     { name: "Saint-Gobain", src: saintGobainLogo.url },
@@ -441,7 +441,7 @@ function LogoCarousel() {
     { name: "Absafe Group", src: absafeLogo.url },
     { name: "Tecfil", src: tecfilLogo.url },
     { name: "Tectool", src: tectoolLogo.url },
-    { name: "Planen Automação", src: planenLogo.url, large: true },
+    { name: "Planen Automação", src: planenLogo.url, mega: true },
   ];
 
   return (
@@ -449,14 +449,16 @@ function LogoCarousel() {
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className="flex h-24 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 px-4"
+          className={`flex h-24 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 overflow-hidden ${
+            logo.mega ? "px-1" : "px-4"
+          }`}
         >
           <img
             src={logo.src}
             alt={logo.name}
             loading="lazy"
             className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
-              logo.xxl ? "max-h-24 max-w-[260px]" : logo.xl ? "max-h-24 max-w-[210px]" : logo.large ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
+              logo.mega ? "max-h-[130%] max-w-[130%] scale-125" : logo.xl ? "max-h-24 max-w-[210px]" : "max-h-14 max-w-full"
             }`}
           />
         </div>
