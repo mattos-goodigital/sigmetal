@@ -77,7 +77,7 @@ function Navbar() {
 
   const links = [
     { label: "Sobre", id: "sobre" },
-    { label: "Quem Somos", id: "quem-somos" },
+    { label: "Serviços", id: "servicos" },
     { label: "Projetos", id: "projetos" },
     { label: "Contato", id: "contato" },
   ];
@@ -354,7 +354,7 @@ function ServicesSection() {
 
 
   return (
-    <section id="quem-somos" className="relative py-24 sm:py-32 bg-zinc-900">
+    <section id="servicos" className="relative py-24 sm:py-32 bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Serviços</span>
@@ -779,7 +779,7 @@ function Footer() {
             <ul className="space-y-3">
               {[
                 { label: "Sobre", id: "sobre" },
-                { label: "Quem Somos", id: "quem-somos" },
+                { label: "Serviços", id: "servicos" },
                 { label: "Projetos", id: "projetos" },
                 { label: "Contato", id: "contato" },
               ].map((l) => (
