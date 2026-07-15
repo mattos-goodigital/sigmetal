@@ -46,6 +46,16 @@ import serralheria_7 from "@/assets/serralheria/serralheria-7.jpeg.asset.json";
 import serralheria_8 from "@/assets/serralheria/serralheria-8.jpeg.asset.json";
 import serralheria_9 from "@/assets/serralheria/serralheria-9.jpeg.asset.json";
 import serralheria_10 from "@/assets/serralheria/serralheria-10.jpeg.asset.json";
+import serralheria_11 from "@/assets/serralheria/serralheria-11.jpeg.asset.json";
+import serralheria_12 from "@/assets/serralheria/serralheria-12.jpeg.asset.json";
+import serralheria_13 from "@/assets/serralheria/serralheria-13.jpeg.asset.json";
+import serralheria_14 from "@/assets/serralheria/serralheria-14.jpeg.asset.json";
+import serralheria_15 from "@/assets/serralheria/serralheria-15.jpeg.asset.json";
+import serralheria_16 from "@/assets/serralheria/serralheria-16.jpeg.asset.json";
+import serralheria_17 from "@/assets/serralheria/serralheria-17.jpeg.asset.json";
+import serralheria_18 from "@/assets/serralheria/serralheria-18.jpeg.asset.json";
+import serralheria_19 from "@/assets/serralheria/serralheria-19.jpeg.asset.json";
+import serralheria_20 from "@/assets/serralheria/serralheria-20.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
 import {
   Menu,
@@ -490,6 +500,16 @@ const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
   { id: "industrial", src: serralheria_8.url, alt: "Serralheria industrial - projeto 8" },
   { id: "industrial", src: serralheria_9.url, alt: "Serralheria industrial - projeto 9" },
   { id: "industrial", src: serralheria_10.url, alt: "Serralheria industrial - projeto 10" },
+  { id: "industrial", src: serralheria_11.url, alt: "Serralheria industrial - projeto 11" },
+  { id: "industrial", src: serralheria_12.url, alt: "Serralheria industrial - projeto 12" },
+  { id: "industrial", src: serralheria_13.url, alt: "Serralheria industrial - projeto 13" },
+  { id: "industrial", src: serralheria_14.url, alt: "Serralheria industrial - projeto 14" },
+  { id: "industrial", src: serralheria_15.url, alt: "Serralheria industrial - projeto 15" },
+  { id: "industrial", src: serralheria_16.url, alt: "Serralheria industrial - projeto 16" },
+  { id: "industrial", src: serralheria_17.url, alt: "Serralheria industrial - projeto 17" },
+  { id: "industrial", src: serralheria_18.url, alt: "Serralheria industrial - projeto 18" },
+  { id: "industrial", src: serralheria_19.url, alt: "Serralheria industrial - projeto 19" },
+  { id: "industrial", src: serralheria_20.url, alt: "Serralheria industrial - projeto 20" },
 ];
 
 function ProjectsSection() {
