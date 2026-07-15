@@ -50,7 +50,9 @@ function LandingPage() {
       <StatsBar />
       <AboutSection />
       <ServicesSection />
+      <BlogSection />
       <ProjectsSection />
+
       <ContactSection />
       <Footer />
       <BackToTop />
