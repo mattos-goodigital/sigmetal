@@ -402,20 +402,29 @@ function AboutSection() {
 }
 
 /* ─── Logo Carousel ─── */
+import bombrilLogo from "@/assets/logos/bombril.webp.asset.json";
+import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.jpg.asset.json";
+import drylockLogo from "@/assets/logos/drylock.svg.asset.json";
+import hitachiLogo from "@/assets/logos/hitachi.png.asset.json";
+import krempelLogo from "@/assets/logos/krempel.svg.asset.json";
+import ulianaLogo from "@/assets/logos/uliana.png.asset.json";
+import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg.asset.json";
+import cooperLogo from "@/assets/logos/cooper.png.asset.json";
+import copobrasLogo from "@/assets/logos/copobras.png.asset.json";
+import naturaLogo from "@/assets/logos/natura.png.asset.json";
+
 function LogoCarousel() {
   const logos = [
-    { name: "MetalBras" },
-    { name: "Indústrias Silva" },
-    { name: "Construtora Horizonte" },
-    { name: "Grupo Ferraz" },
-    { name: "Engenharia Norte" },
-    { name: "Aço & Cia" },
-    { name: "Shopping Centro-Oeste" },
-    { name: "Logística Pesada" },
-    { name: "Portos do Brasil" },
-    { name: "Mineração Atlas" },
-    { name: "Indústria Alimentícia Prima" },
-    { name: "Tecnometal" },
+    { name: "Bombril", src: bombrilLogo.url },
+    { name: "Cummins Meritor", src: cumminsMeritorLogo.url },
+    { name: "Drylock Technologies", src: drylockLogo.url },
+    { name: "Hitachi", src: hitachiLogo.url },
+    { name: "Krempel", src: krempelLogo.url },
+    { name: "Uliana", src: ulianaLogo.url },
+    { name: "DSM-Firmenich", src: dsmFirmenichLogo.url },
+    { name: "Cooper", src: cooperLogo.url },
+    { name: "Copobras", src: copobrasLogo.url },
+    { name: "Natura", src: naturaLogo.url },
   ];
 
   const track = [...logos, ...logos];
@@ -426,17 +435,21 @@ function LogoCarousel() {
         {track.map((logo, idx) => (
           <div
             key={`${logo.name}-${idx}`}
-            className="flex h-20 w-56 shrink-0 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900/60 px-6 mx-3"
+            className="flex h-24 w-48 shrink-0 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 px-6 mx-3"
           >
-            <span className="text-center text-base font-semibold text-zinc-300 tracking-tight">
-              {logo.name}
-            </span>
+            <img
+              src={logo.src}
+              alt={logo.name}
+              loading="lazy"
+              className="max-h-14 max-w-full object-contain grayscale opacity-80 hover:opacity-100 transition-opacity"
+            />
           </div>
         ))}
       </div>
     </div>
   );
 }
+
 
 /* ─── Services (Quem Somos + Serviços) ─── */
 function ServicesSection() {
