@@ -18,6 +18,7 @@ import mauserLogo from "@/assets/logos/mauser.png.asset.json";
 import saintGobainLogo from "@/assets/logos/saint-gobain.svg.asset.json";
 import tecfilLogo from "@/assets/logos/tecfil.svg.asset.json";
 import tectoolLogo from "@/assets/logos/tectool.png.asset.json";
+import planenLogo from "@/assets/logos/planen.png.asset.json";
 import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
 import nr12_2 from "@/assets/nr12/nr12-2.jpeg.asset.json";
 import nr12_3 from "@/assets/nr12/nr12-3.jpeg.asset.json";
