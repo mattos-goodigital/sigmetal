@@ -341,36 +341,17 @@ function LogoCarousel() {
 function ServicesSection() {
   const services = [
     {
-      icon: Cog,
-      title: "Estruturas Metálicas",
-      desc: "Projetos de galpões, mezaninos, coberturas e estruturas sob medida com cálculo estrutural.",
-    },
-    {
-      icon: Flame,
-      title: "Soldagem Industrial",
-      desc: "MIG, MAG, TIG e eletrodo revestido em aço carbono, inox e alumínio com soldadores certificados.",
-    },
-    {
-      icon: Wrench,
-      title: "Usinagem e Corte",
-      desc: "Corte a laser, plasma, dobra CNC e usinagem de precisão para peças complexas.",
+      icon: Shield,
+      title: "Proteção de Máquinas (NR12)",
+      desc: "Projeto e fabricação de proteções fixas e móveis para máquinas e equipamentos, em conformidade com a norma regulamentadora NR12.",
     },
     {
       icon: Factory,
-      title: "Portões e Grades",
-      desc: "Portões industriais, residenciais, grades de segurança, corrimãos e peças decorativas em metal.",
-    },
-    {
-      icon: Shield,
-      title: "Manutenção Predial",
-      desc: "Reparos, reforços estruturais e manutenção preventiva em estruturas metálicas existentes.",
-    },
-    {
-      icon: Users,
-      title: "Projetos Customizados",
-      desc: "Desenvolvimento de soluções exclusivas para demandas específicas de indústrias e empresas.",
+      title: "Serralheria Industrial",
+      desc: "Estruturas metálicas, guarda-corpos, escadas, plataformas, corrimãos e peças sob medida para o ambiente industrial.",
     },
   ];
+
 
   return (
     <section id="quem-somos" className="relative py-24 sm:py-32 bg-zinc-900">
