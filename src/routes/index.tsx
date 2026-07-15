@@ -219,6 +219,7 @@ function StatsBar() {
     { value: "500+", label: "Projetos Entregues" },
     { value: "120+", label: "Clientes Atendidos" },
     { value: "100%", label: "Compromisso com Prazos" },
+    { value: "100%", label: "Compromisso com Prazos" },
   ];
 
   return (
