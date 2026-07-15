@@ -402,16 +402,7 @@ function AboutSection() {
 }
 
 /* ─── Logo Carousel ─── */
-import bombrilLogo from "@/assets/logos/bombril.webp.asset.json";
-import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.jpg.asset.json";
-import drylockLogo from "@/assets/logos/drylock.svg.asset.json";
-import hitachiLogo from "@/assets/logos/hitachi.png.asset.json";
-import krempelLogo from "@/assets/logos/krempel.svg.asset.json";
-import ulianaLogo from "@/assets/logos/uliana.png.asset.json";
-import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg.asset.json";
-import cooperLogo from "@/assets/logos/cooper.png.asset.json";
-import copobrasLogo from "@/assets/logos/copobras.png.asset.json";
-import naturaLogo from "@/assets/logos/natura.png.asset.json";
+
 
 function LogoCarousel() {
   const logos = [
