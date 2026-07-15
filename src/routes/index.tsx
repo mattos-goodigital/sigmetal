@@ -77,7 +77,7 @@ function Navbar() {
 
   const links = [
     { label: "Sobre", id: "sobre" },
-    { label: "Quem Somos", id: "quem-somos" },
+    { label: "Serviços", id: "servicos" },
     { label: "Projetos", id: "projetos" },
     { label: "Contato", id: "contato" },
   ];
@@ -341,42 +341,23 @@ function LogoCarousel() {
 function ServicesSection() {
   const services = [
     {
-      icon: Cog,
-      title: "Estruturas Metálicas",
-      desc: "Projetos de galpões, mezaninos, coberturas e estruturas sob medida com cálculo estrutural.",
-    },
-    {
-      icon: Flame,
-      title: "Soldagem Industrial",
-      desc: "MIG, MAG, TIG e eletrodo revestido em aço carbono, inox e alumínio com soldadores certificados.",
-    },
-    {
-      icon: Wrench,
-      title: "Usinagem e Corte",
-      desc: "Corte a laser, plasma, dobra CNC e usinagem de precisão para peças complexas.",
+      icon: Shield,
+      title: "Proteção de Máquinas (NR12)",
+      desc: "Projeto e fabricação de proteções fixas e móveis para máquinas e equipamentos, em conformidade com a norma regulamentadora NR12.",
     },
     {
       icon: Factory,
-      title: "Portões e Grades",
-      desc: "Portões industriais, residenciais, grades de segurança, corrimãos e peças decorativas em metal.",
-    },
-    {
-      icon: Shield,
-      title: "Manutenção Predial",
-      desc: "Reparos, reforços estruturais e manutenção preventiva em estruturas metálicas existentes.",
-    },
-    {
-      icon: Users,
-      title: "Projetos Customizados",
-      desc: "Desenvolvimento de soluções exclusivas para demandas específicas de indústrias e empresas.",
+      title: "Serralheria Industrial",
+      desc: "Estruturas metálicas, guarda-corpos, escadas, plataformas, corrimãos e peças sob medida para o ambiente industrial.",
     },
   ];
 
+
   return (
-    <section id="quem-somos" className="relative py-24 sm:py-32 bg-zinc-900">
+    <section id="servicos" className="relative py-24 sm:py-32 bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Quem Somos</span>
+          <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Serviços</span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
             Soluções Completas em Metal
           </h2>
@@ -386,7 +367,7 @@ function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {services.map((s) => (
             <div
               key={s.title}
@@ -400,6 +381,7 @@ function ServicesSection() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
@@ -797,7 +779,7 @@ function Footer() {
             <ul className="space-y-3">
               {[
                 { label: "Sobre", id: "sobre" },
-                { label: "Quem Somos", id: "quem-somos" },
+                { label: "Serviços", id: "servicos" },
                 { label: "Projetos", id: "projetos" },
                 { label: "Contato", id: "contato" },
               ].map((l) => (
