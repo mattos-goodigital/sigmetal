@@ -357,7 +357,7 @@ function ServicesSection() {
     <section id="quem-somos" className="relative py-24 sm:py-32 bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Quem Somos</span>
+          <span className="text-sm font-semibold text-red-500 tracking-wider uppercase">Serviços</span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight">
             Soluções Completas em Metal
           </h2>
@@ -367,7 +367,7 @@ function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {services.map((s) => (
             <div
               key={s.title}
@@ -381,6 +381,7 @@ function ServicesSection() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
