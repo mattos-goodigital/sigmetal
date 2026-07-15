@@ -456,7 +456,7 @@ function LogoCarousel() {
             alt={logo.name}
             loading="lazy"
             className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
-              logo.xxl ? "max-h-[110px] max-w-[240px]" : logo.xl ? "max-h-24 max-w-[210px]" : logo.large ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
+              logo.xxl ? "max-h-24 max-w-[260px]" : logo.xl ? "max-h-24 max-w-[210px]" : logo.large ? "max-h-20 max-w-[170px]" : "max-h-14 max-w-full"
             }`}
           />
         </div>
