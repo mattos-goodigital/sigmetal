@@ -263,8 +263,9 @@ function HeroSection() {
           className="h-full w-full object-cover brightness-[1.15] contrast-110 saturate-105"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-zinc-950/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/50 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-zinc-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/50 to-zinc-950/40" />
+
 
 
       </div>
