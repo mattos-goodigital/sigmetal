@@ -8,7 +8,7 @@ import hitachiLogo from "@/assets/logos/hitachi.png.asset.json";
 import krempelLogo from "@/assets/logos/krempel.svg.asset.json";
 import ulianaLogo from "@/assets/logos/uliana.png.asset.json";
 import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg.asset.json";
-import cooperLogo from "@/assets/logos/cooper.svg.asset.json";
+import cooperLogo from "@/assets/logos/cooper.png.asset.json";
 import copobrasLogo from "@/assets/logos/copobras.png.asset.json";
 import naturaLogo from "@/assets/logos/natura.png.asset.json";
 import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
