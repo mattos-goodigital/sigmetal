@@ -800,9 +800,11 @@ function Footer() {
               {[
                 { label: "Sobre", id: "sobre" },
                 { label: "Quem Somos", id: "quem-somos" },
+                { label: "Blog", id: "blog" },
                 { label: "Projetos", id: "projetos" },
                 { label: "Contato", id: "contato" },
               ].map((l) => (
+
                 <li key={l.id}>
                   <button
                     onClick={() => scrollTo(l.id)}
