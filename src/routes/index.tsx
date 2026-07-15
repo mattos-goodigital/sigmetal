@@ -481,8 +481,11 @@ const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
 function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState<CategoryId>("nr12");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const filteredItems = PORTFOLIO_ITEMS.filter((item) => item.id === activeCategory);
+  const visibleItems = filteredItems.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredItems.length;
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
@@ -532,6 +535,7 @@ function ProjectsSection() {
               onClick={() => {
                 setActiveCategory(cat.id);
                 setLightboxIndex(null);
+                setVisibleCount(6);
               }}
               className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all border ${
                 activeCategory === cat.id
@@ -546,7 +550,7 @@ function ProjectsSection() {
 
         {/* Photo grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredItems.map((item, index) => (
+          {visibleItems.map((item, index) => (
             <button
               key={`${item.id}-${index}`}
               onClick={() => openLightbox(index)}
@@ -568,6 +572,17 @@ function ProjectsSection() {
             </button>
           ))}
         </div>
+
+        {hasMore && (
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={() => setVisibleCount((c) => c + 6)}
+              className="rounded-full bg-red-500 px-8 py-3 text-sm font-semibold text-zinc-950 hover:bg-red-400 transition-colors"
+            >
+              Ver mais
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox */}
