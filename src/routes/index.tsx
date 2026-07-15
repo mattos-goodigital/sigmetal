@@ -426,7 +426,7 @@ function LogoCarousel() {
   const logos = [
     { name: "Bombril", src: bombrilLogo.url, xl: true },
     { name: "Cummins Meritor", src: cumminsMeritorLogo.url, xl: true },
-    { name: "Drylock Technologies", src: drylockLogo.url, xl: true },
+    { name: "Drylock Technologies", src: drylockLogo.url, xxl: true },
     { name: "Hitachi", src: hitachiLogo.url },
     { name: "Krempel", src: krempelLogo.url },
     { name: "Uliana", src: ulianaLogo.url },
