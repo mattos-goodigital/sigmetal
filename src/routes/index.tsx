@@ -334,22 +334,64 @@ function HeroSection() {
 }
 
 /* ─── Stats Bar ─── */
+function useCountUp(target: number, start: boolean, duration = 2000) {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (!start) return;
+    let raf = 0;
+    const t0 = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min((now - t0) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setValue(Math.round(target * eased));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [target, start, duration]);
+  return value;
+}
+
+function StatItem({ target, suffix, label, start }: { target: number; suffix: string; label: string; start: boolean }) {
+  const n = useCountUp(target, start);
+  return (
+    <div className="bg-zinc-900/90 backdrop-blur-sm px-6 py-8 text-center">
+      <div className="text-3xl md:text-4xl font-bold text-red-500">{n}{suffix}</div>
+      <div className="mt-2 text-sm text-zinc-400 font-medium">{label}</div>
+    </div>
+  );
+}
+
 function StatsBar() {
   const stats = [
-    { value: "15+", label: "Anos de Experiência" },
-    { value: "500+", label: "Projetos Entregues" },
-    { value: "120+", label: "Clientes Atendidos" },
-    { value: "100%", label: "Compromisso com Prazos" },
+    { target: 15, suffix: "+", label: "Anos de Experiência" },
+    { target: 500, suffix: "+", label: "Projetos Entregues" },
+    { target: 120, suffix: "+", label: "Clientes Atendidos" },
+    { target: 100, suffix: "%", label: "Compromisso com Prazos" },
   ];
 
+  const ref = useRef<HTMLDivElement>(null);
+  const [start, setStart] = useState(false);
+  useEffect(() => {
+    if (!ref.current) return;
+    const obs = new IntersectionObserver(
+      ([e]) => {
+        if (e.isIntersecting) {
+          setStart(true);
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    obs.observe(ref.current);
+    return () => obs.disconnect();
+  }, []);
+
   return (
-    <div className="relative z-20 -mt-16 mx-auto max-w-6xl px-4">
+    <div ref={ref} className="relative z-20 -mt-16 mx-auto max-w-6xl px-4">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-800">
         {stats.map((s) => (
-          <div key={s.label} className="bg-zinc-900/90 backdrop-blur-sm px-6 py-8 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-red-500">{s.value}</div>
-            <div className="mt-2 text-sm text-zinc-400 font-medium">{s.label}</div>
-          </div>
+          <StatItem key={s.label} {...s} start={start} />
         ))}
       </div>
     </div>
