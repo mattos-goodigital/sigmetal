@@ -489,12 +489,12 @@ function LogoCarousel() {
   ];
 
   return (
-    <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4">
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className={`flex h-24 items-center justify-center overflow-hidden rounded-xl border border-zinc-800 bg-zinc-100 ${
-            logo.mega ? "px-1" : "px-4"
+          className={`flex h-16 sm:h-24 items-center justify-center overflow-hidden rounded-lg sm:rounded-xl border border-zinc-800 bg-zinc-100 ${
+            logo.mega ? "px-1" : "px-2 sm:px-4"
           }`}
         >
           <img
@@ -502,7 +502,7 @@ function LogoCarousel() {
             alt={logo.name}
             loading="lazy"
             className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
-              logo.mega ? "max-h-[130%] max-w-[130%] scale-125" : logo.xl ? "max-h-24 max-w-[210px]" : "max-h-14 max-w-full"
+              logo.mega ? "max-h-[130%] max-w-[130%] scale-125" : logo.xl ? "max-h-16 sm:max-h-24 max-w-[140px] sm:max-w-[210px]" : "max-h-10 sm:max-h-14 max-w-full"
             }`}
           />
         </div>
