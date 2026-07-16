@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
-import sigmetalLogo from "@/assets/logo-sigmetal.png.asset.json";
+import sigmetalLogo from "@/assets/logo-sigmetal-v2.png.asset.json";
 import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
 import bombrilLogo from "@/assets/logos/bombril.png.asset.json";
 import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png.asset.json";
@@ -1035,12 +1035,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-2">
-              <Factory className="h-6 w-6 text-red-500" />
-              <span className="text-lg font-bold">
-                SIG<span className="text-red-500">METAL</span>
-              </span>
-            </div>
+            <img src={sigmetalLogo.url} alt="Sigmetal" className="h-10 w-auto" />
             <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
               Serralheria industrial com foco em qualidade, segurança e pontualidade. Transformando metal em soluções desde 2009.
             </p>
