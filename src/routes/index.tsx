@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
+import sigmetalLogo from "@/assets/logo-sigmetal.png.asset.json";
 import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
 import bombrilLogo from "@/assets/logos/bombril.png.asset.json";
 import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png.asset.json";
@@ -206,11 +207,12 @@ function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <button onClick={() => scrollTo("hero")} className="flex items-center gap-2 group">
-            <Factory className="h-7 w-7 text-red-500 group-hover:text-red-400 transition-colors" />
-            <span className="text-xl font-bold tracking-tight">
-              SIG<span className="text-red-500">METAL</span>
-            </span>
+          <button onClick={() => scrollTo("hero")} className="flex items-center group">
+            <img
+              src={sigmetalLogo.url}
+              alt="SIG Metal"
+              className="h-10 w-auto object-contain"
+            />
           </button>
 
           {/* Desktop links */}
