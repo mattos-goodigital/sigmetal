@@ -1035,7 +1035,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
-            <img src={sigmetalLogo.url} alt="Sigmetal" className="h-10 w-auto" />
+            <img src={sigmetalLogo.url} alt="Sigmetal" className="h-16 w-auto" />
             <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
               Serralheria industrial com foco em qualidade, segurança e pontualidade. Transformando metal em soluções desde 2009.
             </p>
