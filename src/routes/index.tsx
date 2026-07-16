@@ -211,7 +211,7 @@ function Navbar() {
             <img
               src={sigmetalLogo.url}
               alt="SIG Metal"
-              className="h-10 w-auto object-contain"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </button>
 
