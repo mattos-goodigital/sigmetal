@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
-import sigmetalLogo from "@/assets/logo-sigmetal.png.asset.json";
+import sigmetalLogo from "@/assets/logo-sigmetal-v2.png.asset.json";
 import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
 import bombrilLogo from "@/assets/logos/bombril.png.asset.json";
 import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png.asset.json";
