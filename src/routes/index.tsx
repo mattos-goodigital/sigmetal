@@ -489,11 +489,11 @@ function LogoCarousel() {
   ];
 
   return (
-    <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 lg:grid-cols-6">
+    <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className={`contents sm:flex sm:h-24 sm:items-center sm:justify-center sm:overflow-hidden sm:rounded-xl sm:border sm:border-zinc-800 sm:bg-zinc-100 ${
+          className={`flex h-24 items-center justify-center overflow-hidden rounded-none border-0 bg-transparent sm:rounded-xl sm:border sm:border-zinc-800 sm:bg-zinc-100 ${
             logo.mega ? "px-1" : "px-4"
           }`}
         >
@@ -501,8 +501,8 @@ function LogoCarousel() {
             src={logo.src}
             alt={logo.name}
             loading="lazy"
-            className={`mx-auto h-auto object-contain brightness-0 invert opacity-95 drop-shadow-[0_0_14px_rgba(255,255,255,0.18)] sm:brightness-100 sm:invert-0 sm:grayscale sm:opacity-80 sm:drop-shadow-none sm:hover:opacity-100 transition-opacity ${
-              logo.mega ? "max-h-20 max-w-[240px] sm:max-h-[130%] sm:max-w-[130%] sm:scale-125" : logo.xl ? "max-h-20 max-w-[220px] sm:max-h-24 sm:max-w-[210px]" : "max-h-16 max-w-[220px] sm:max-h-14 sm:max-w-full"
+            className={`object-contain brightness-0 invert opacity-90 sm:brightness-100 sm:invert-0 sm:grayscale sm:opacity-80 sm:hover:opacity-100 transition-opacity ${
+              logo.mega ? "max-h-[130%] max-w-[130%] scale-125" : logo.xl ? "max-h-24 max-w-[210px]" : "max-h-14 max-w-full"
             }`}
           />
         </div>
@@ -743,7 +743,7 @@ function ProjectsSection() {
         </div>
 
         {/* Photo grid */}
-        <div className="mx-auto grid max-w-[340px] grid-cols-2 gap-2.5 sm:max-w-none sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
           {visibleItems.map((item, index) => (
             <button
               key={`${item.id}-${index}`}
