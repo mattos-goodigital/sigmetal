@@ -493,7 +493,7 @@ function LogoCarousel() {
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className={`flex h-24 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-100 overflow-hidden ${
+          className={`flex h-24 items-center justify-center overflow-hidden rounded-none border-0 bg-transparent sm:rounded-xl sm:border sm:border-zinc-800 sm:bg-zinc-100 ${
             logo.mega ? "px-1" : "px-4"
           }`}
         >
@@ -501,13 +501,14 @@ function LogoCarousel() {
             src={logo.src}
             alt={logo.name}
             loading="lazy"
-            className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
+            className={`object-contain brightness-0 invert opacity-90 sm:brightness-100 sm:invert-0 sm:grayscale sm:opacity-80 sm:hover:opacity-100 transition-opacity ${
               logo.mega ? "max-h-[130%] max-w-[130%] scale-125" : logo.xl ? "max-h-24 max-w-[210px]" : "max-h-14 max-w-full"
             }`}
           />
         </div>
       ))}
     </div>
+
   );
 }
 
