@@ -870,12 +870,25 @@ function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
-    // Simulate API call
-    await new Promise((r) => setTimeout(r, 1000));
-    setSending(false);
-    setSubmitted(true);
-    setForm({ name: "", email: "", phone: "", message: "" });
-    setTimeout(() => setSubmitted(false), 5000);
+    try {
+      const url =
+        import.meta.env.VITE_CONTACT_WEBHOOK_URL ??
+        "http://localhost:5678/webhook-test/2fac420e-e684-4257-9420-6b854673b312";
+      const user = import.meta.env.VITE_CONTACT_WEBHOOK_USER ?? "admin";
+      const pass = import.meta.env.VITE_CONTACT_WEBHOOK_PASS ?? "admin";
+      await axios.post(url, form, {
+        auth: { username: user, password: pass },
+        headers: { "Content-Type": "application/json" },
+      });
+      setSubmitted(true);
+      setForm({ name: "", email: "", phone: "", message: "" });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      console.error("Erro ao enviar contato:", err);
+      alert("Não foi possível enviar sua mensagem. Tente novamente.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClass =
