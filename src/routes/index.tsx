@@ -230,7 +230,7 @@ function Navbar() {
               onClick={() => scrollTo("contato")}
               className="inline-flex items-center gap-2 rounded-lg bg-red-500 px-4 py-2 text-sm font-semibold text-zinc-950 hover:bg-red-400 transition-colors"
             >
-              <Phone className="h-4 w-4" />
+              <Mail className="h-4 w-4" />
               Orçamento
             </button>
           </div>
