@@ -501,7 +501,7 @@ function LogoCarousel() {
             src={logo.src}
             alt={logo.name}
             loading="lazy"
-            className={`object-contain grayscale opacity-80 hover:opacity-100 transition-opacity ${
+            className={`object-contain ${
               logo.mega ? "max-h-[130%] max-w-[130%] scale-125" : logo.xl ? "max-h-16 sm:max-h-24 max-w-[140px] sm:max-w-[210px]" : "max-h-10 sm:max-h-14 max-w-full"
             }`}
           />
