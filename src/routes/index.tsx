@@ -1019,6 +1019,19 @@ function ContactSection() {
             </div>
           </div>
         </div>
+
+        <div className="mt-16 overflow-hidden rounded-2xl border border-zinc-800 shadow-lg shadow-black/30">
+          <iframe
+            title="Mapa Sigmetal"
+            src="https://www.google.com/maps?q=Rua+Tenente+Bruno+Schripa,+38+-+Vila+Nancy,+Mogi+das+Cruzes+-+SP,+08735-100&output=embed"
+            width="100%"
+            height="420"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block w-full h-[320px] sm:h-[420px]"
+            style={{ border: 0, filter: "grayscale(0.3) contrast(1.05)" }}
+          />
+        </div>
       </div>
     </section>
   );
