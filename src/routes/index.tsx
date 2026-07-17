@@ -117,6 +117,7 @@ import serralheria_58 from "@/assets/serralheria/serralheria-58.jpeg.asset.json"
 import serralheria_59 from "@/assets/serralheria/serralheria-59.jpeg.asset.json";
 import serralheria_60 from "@/assets/serralheria/serralheria-60.jpeg.asset.json";
 import { useState, useEffect, useRef } from "react";
+import axios from "axios";
 import {
   Menu,
   X,
