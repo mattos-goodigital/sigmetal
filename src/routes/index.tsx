@@ -313,7 +313,7 @@ function HeroSection() {
             }}
             className="inline-flex items-center gap-2 rounded-xl bg-red-500 px-8 py-4 text-base font-bold text-zinc-950 hover:bg-red-400 transition-all hover:scale-[1.02] shadow-lg shadow-red-500/20"
           >
-            <Phone className="h-5 w-5" />
+            <Mail className="h-5 w-5" />
             Solicitar Orçamento
           </a>
           <a
