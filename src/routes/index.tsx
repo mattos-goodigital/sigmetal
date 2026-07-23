@@ -1,121 +1,121 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
-import sigmetalLogo from "@/assets/logo-sigmetal-v2.png.asset.json";
-import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
-import bombrilLogo from "@/assets/logos/bombril.png.asset.json";
-import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png.asset.json";
-import drylockLogo from "@/assets/logos/drylock.svg.asset.json";
-import hitachiLogo from "@/assets/logos/hitachi.png.asset.json";
-import krempelLogo from "@/assets/logos/krempel.svg.asset.json";
-import ulianaLogo from "@/assets/logos/uliana.png.asset.json";
-import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg.asset.json";
-import cooperLogo from "@/assets/logos/cooper.png.asset.json";
-import copobrasLogo from "@/assets/logos/copobras.png.asset.json";
-import naturaLogo from "@/assets/logos/natura.png.asset.json";
-import absafeLogo from "@/assets/logos/absafe.png.asset.json";
-import emersonLogo from "@/assets/logos/emerson.png.asset.json";
-import mahleLogo from "@/assets/logos/mahle.png.asset.json";
-import mauserLogo from "@/assets/logos/mauser.png.asset.json";
-import saintGobainLogo from "@/assets/logos/saint-gobain.svg.asset.json";
-import tecfilLogo from "@/assets/logos/tecfil.svg.asset.json";
-import tectoolLogo from "@/assets/logos/tectool.png.asset.json";
-import planenLogo from "@/assets/logos/planen.png.asset.json";
-import nr12_1 from "@/assets/nr12/nr12-1.jpeg.asset.json";
-import nr12_2 from "@/assets/nr12/nr12-2.jpeg.asset.json";
-import nr12_3 from "@/assets/nr12/nr12-3.jpeg.asset.json";
-import nr12_4 from "@/assets/nr12/nr12-4.jpeg.asset.json";
-import nr12_5 from "@/assets/nr12/nr12-5.jpeg.asset.json";
-import nr12_6 from "@/assets/nr12/nr12-6.jpeg.asset.json";
-import nr12_7 from "@/assets/nr12/nr12-7.jpeg.asset.json";
-import nr12_8 from "@/assets/nr12/nr12-8.jpeg.asset.json";
-import nr12_9 from "@/assets/nr12/nr12-9.jpeg.asset.json";
-import nr12_10 from "@/assets/nr12/nr12-10.jpeg.asset.json";
-import nr12_11 from "@/assets/nr12/nr12-11.jpeg.asset.json";
-import nr12_12 from "@/assets/nr12/nr12-12.jpeg.asset.json";
-import nr12_13 from "@/assets/nr12/nr12-13.jpeg.asset.json";
-import nr12_14 from "@/assets/nr12/nr12-14.jpeg.asset.json";
-import nr12_15 from "@/assets/nr12/nr12-15.jpeg.asset.json";
-import nr12_16 from "@/assets/nr12/nr12-16.jpeg.asset.json";
-import nr12_17 from "@/assets/nr12/nr12-17.jpeg.asset.json";
-import nr12_18 from "@/assets/nr12/nr12-18.jpeg.asset.json";
-import nr12_19 from "@/assets/nr12/nr12-19.jpeg.asset.json";
-import nr12_20 from "@/assets/nr12/nr12-20.jpeg.asset.json";
-import nr12_21 from "@/assets/nr12/nr12-21.jpeg.asset.json";
-import nr12_22 from "@/assets/nr12/nr12-22.jpeg.asset.json";
-import nr12_23 from "@/assets/nr12/nr12-23.jpeg.asset.json";
-import nr12_24 from "@/assets/nr12/nr12-24.jpeg.asset.json";
-import nr12_25 from "@/assets/nr12/nr12-25.jpeg.asset.json";
-import nr12_26 from "@/assets/nr12/nr12-26.jpeg.asset.json";
-import nr12_27 from "@/assets/nr12/nr12-27.jpeg.asset.json";
-import nr12_28 from "@/assets/nr12/nr12-28.jpeg.asset.json";
-import nr12_29 from "@/assets/nr12/nr12-29.jpeg.asset.json";
-import nr12_30 from "@/assets/nr12/nr12-30.jpeg.asset.json";
-import nr12_31 from "@/assets/nr12/nr12-31.jpeg.asset.json";
-import nr12_32 from "@/assets/nr12/nr12-32.jpeg.asset.json";
-import nr12_33 from "@/assets/nr12/nr12-33.jpeg.asset.json";
-import nr12_34 from "@/assets/nr12/nr12-34.jpeg.asset.json";
-import nr12_35 from "@/assets/nr12/nr12-35.jpeg.asset.json";
-import nr12_36 from "@/assets/nr12/nr12-36.jpeg.asset.json";
-import serralheria_1 from "@/assets/serralheria/serralheria-1.jpeg.asset.json";
-import serralheria_2 from "@/assets/serralheria/serralheria-2.jpeg.asset.json";
-import serralheria_3 from "@/assets/serralheria/serralheria-3.jpeg.asset.json";
-import serralheria_4 from "@/assets/serralheria/serralheria-4.jpeg.asset.json";
-import serralheria_5 from "@/assets/serralheria/serralheria-5.jpeg.asset.json";
-import serralheria_6 from "@/assets/serralheria/serralheria-6.jpeg.asset.json";
-import serralheria_7 from "@/assets/serralheria/serralheria-7.jpeg.asset.json";
-import serralheria_8 from "@/assets/serralheria/serralheria-8.jpeg.asset.json";
-import serralheria_9 from "@/assets/serralheria/serralheria-9.jpeg.asset.json";
-import serralheria_10 from "@/assets/serralheria/serralheria-10.jpeg.asset.json";
-import serralheria_11 from "@/assets/serralheria/serralheria-11.jpeg.asset.json";
-import serralheria_12 from "@/assets/serralheria/serralheria-12.jpeg.asset.json";
-import serralheria_13 from "@/assets/serralheria/serralheria-13.jpeg.asset.json";
-import serralheria_14 from "@/assets/serralheria/serralheria-14.jpeg.asset.json";
-import serralheria_15 from "@/assets/serralheria/serralheria-15.jpeg.asset.json";
-import serralheria_16 from "@/assets/serralheria/serralheria-16.jpeg.asset.json";
-import serralheria_17 from "@/assets/serralheria/serralheria-17.jpeg.asset.json";
-import serralheria_18 from "@/assets/serralheria/serralheria-18.jpeg.asset.json";
-import serralheria_19 from "@/assets/serralheria/serralheria-19.jpeg.asset.json";
-import serralheria_20 from "@/assets/serralheria/serralheria-20.jpeg.asset.json";
-import serralheria_21 from "@/assets/serralheria/serralheria-21.jpeg.asset.json";
-import serralheria_22 from "@/assets/serralheria/serralheria-22.jpeg.asset.json";
-import serralheria_23 from "@/assets/serralheria/serralheria-23.jpeg.asset.json";
-import serralheria_24 from "@/assets/serralheria/serralheria-24.jpeg.asset.json";
-import serralheria_25 from "@/assets/serralheria/serralheria-25.jpeg.asset.json";
-import serralheria_26 from "@/assets/serralheria/serralheria-26.jpeg.asset.json";
-import serralheria_27 from "@/assets/serralheria/serralheria-27.jpeg.asset.json";
-import serralheria_28 from "@/assets/serralheria/serralheria-28.jpeg.asset.json";
-import serralheria_29 from "@/assets/serralheria/serralheria-29.jpeg.asset.json";
-import serralheria_30 from "@/assets/serralheria/serralheria-30.jpeg.asset.json";
-import serralheria_31 from "@/assets/serralheria/serralheria-31.jpeg.asset.json";
-import serralheria_32 from "@/assets/serralheria/serralheria-32.jpeg.asset.json";
-import serralheria_33 from "@/assets/serralheria/serralheria-33.jpeg.asset.json";
-import serralheria_34 from "@/assets/serralheria/serralheria-34.jpeg.asset.json";
-import serralheria_35 from "@/assets/serralheria/serralheria-35.jpeg.asset.json";
-import serralheria_36 from "@/assets/serralheria/serralheria-36.jpeg.asset.json";
-import serralheria_37 from "@/assets/serralheria/serralheria-37.jpeg.asset.json";
-import serralheria_38 from "@/assets/serralheria/serralheria-38.jpeg.asset.json";
-import serralheria_39 from "@/assets/serralheria/serralheria-39.jpeg.asset.json";
-import serralheria_40 from "@/assets/serralheria/serralheria-40.jpeg.asset.json";
-import serralheria_41 from "@/assets/serralheria/serralheria-41.jpeg.asset.json";
-import serralheria_42 from "@/assets/serralheria/serralheria-42.jpeg.asset.json";
-import serralheria_43 from "@/assets/serralheria/serralheria-43.jpeg.asset.json";
-import serralheria_44 from "@/assets/serralheria/serralheria-44.jpeg.asset.json";
-import serralheria_45 from "@/assets/serralheria/serralheria-45.jpeg.asset.json";
-import serralheria_46 from "@/assets/serralheria/serralheria-46.jpeg.asset.json";
-import serralheria_47 from "@/assets/serralheria/serralheria-47.jpeg.asset.json";
-import serralheria_48 from "@/assets/serralheria/serralheria-48.jpeg.asset.json";
-import serralheria_49 from "@/assets/serralheria/serralheria-49.jpeg.asset.json";
-import serralheria_50 from "@/assets/serralheria/serralheria-50.jpeg.asset.json";
-import serralheria_51 from "@/assets/serralheria/serralheria-51.jpeg.asset.json";
-import serralheria_52 from "@/assets/serralheria/serralheria-52.jpeg.asset.json";
-import serralheria_53 from "@/assets/serralheria/serralheria-53.jpeg.asset.json";
-import serralheria_54 from "@/assets/serralheria/serralheria-54.jpeg.asset.json";
-import serralheria_55 from "@/assets/serralheria/serralheria-55.jpeg.asset.json";
-import serralheria_56 from "@/assets/serralheria/serralheria-56.jpeg.asset.json";
-import serralheria_57 from "@/assets/serralheria/serralheria-57.jpeg.asset.json";
-import serralheria_58 from "@/assets/serralheria/serralheria-58.jpeg.asset.json";
-import serralheria_59 from "@/assets/serralheria/serralheria-59.jpeg.asset.json";
-import serralheria_60 from "@/assets/serralheria/serralheria-60.jpeg.asset.json";
+import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg";
+import sigmetalLogo from "@/assets/logo-sigmetal-v2.png";
+import sobreSerralheria from "@/assets/sobre-serralheria.jpeg";
+import bombrilLogo from "@/assets/logos/bombril.png";
+import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png";
+import drylockLogo from "@/assets/logos/drylock.svg?url";
+import hitachiLogo from "@/assets/logos/hitachi.png";
+import krempelLogo from "@/assets/logos/krempel.svg?url";
+import ulianaLogo from "@/assets/logos/uliana.png";
+import dsmFirmenichLogo from "@/assets/logos/dsm-firmenich.svg?url";
+import cooperLogo from "@/assets/logos/cooper.png";
+import copobrasLogo from "@/assets/logos/copobras.png";
+import naturaLogo from "@/assets/logos/natura.png";
+import absafeLogo from "@/assets/logos/absafe.png";
+import emersonLogo from "@/assets/logos/emerson.png";
+import mahleLogo from "@/assets/logos/mahle.png";
+import mauserLogo from "@/assets/logos/mauser.png";
+import saintGobainLogo from "@/assets/logos/saint-gobain.svg?url";
+import tecfilLogo from "@/assets/logos/tecfil.svg?url";
+import tectoolLogo from "@/assets/logos/tectool.png";
+import planenLogo from "@/assets/logos/planen.png";
+import nr12_1 from "@/assets/nr12/nr12-1.jpeg";
+import nr12_2 from "@/assets/nr12/nr12-2.jpeg";
+import nr12_3 from "@/assets/nr12/nr12-3.jpeg";
+import nr12_4 from "@/assets/nr12/nr12-4.jpeg";
+import nr12_5 from "@/assets/nr12/nr12-5.jpeg";
+import nr12_6 from "@/assets/nr12/nr12-6.jpeg";
+import nr12_7 from "@/assets/nr12/nr12-7.jpeg";
+import nr12_8 from "@/assets/nr12/nr12-8.jpeg";
+import nr12_9 from "@/assets/nr12/nr12-9.jpeg";
+import nr12_10 from "@/assets/nr12/nr12-10.jpeg";
+import nr12_11 from "@/assets/nr12/nr12-11.jpeg";
+import nr12_12 from "@/assets/nr12/nr12-12.jpeg";
+import nr12_13 from "@/assets/nr12/nr12-13.jpeg";
+import nr12_14 from "@/assets/nr12/nr12-14.jpeg";
+import nr12_15 from "@/assets/nr12/nr12-15.jpeg";
+import nr12_16 from "@/assets/nr12/nr12-16.jpeg";
+import nr12_17 from "@/assets/nr12/nr12-17.jpeg";
+import nr12_18 from "@/assets/nr12/nr12-18.jpeg";
+import nr12_19 from "@/assets/nr12/nr12-19.jpeg";
+import nr12_20 from "@/assets/nr12/nr12-20.jpeg";
+import nr12_21 from "@/assets/nr12/nr12-21.jpeg";
+import nr12_22 from "@/assets/nr12/nr12-22.jpeg";
+import nr12_23 from "@/assets/nr12/nr12-23.jpeg";
+import nr12_24 from "@/assets/nr12/nr12-24.jpeg";
+import nr12_25 from "@/assets/nr12/nr12-25.jpeg";
+import nr12_26 from "@/assets/nr12/nr12-26.jpeg";
+import nr12_27 from "@/assets/nr12/nr12-27.jpeg";
+import nr12_28 from "@/assets/nr12/nr12-28.jpeg";
+import nr12_29 from "@/assets/nr12/nr12-29.jpeg";
+import nr12_30 from "@/assets/nr12/nr12-30.jpeg";
+import nr12_31 from "@/assets/nr12/nr12-31.jpeg";
+import nr12_32 from "@/assets/nr12/nr12-32.jpeg";
+import nr12_33 from "@/assets/nr12/nr12-33.jpeg";
+import nr12_34 from "@/assets/nr12/nr12-34.jpeg";
+import nr12_35 from "@/assets/nr12/nr12-35.jpeg";
+import nr12_36 from "@/assets/nr12/nr12-36.jpeg";
+import serralheria_1 from "@/assets/serralheria/serralheria-1.jpeg";
+import serralheria_2 from "@/assets/serralheria/serralheria-2.jpeg";
+import serralheria_3 from "@/assets/serralheria/serralheria-3.jpeg";
+import serralheria_4 from "@/assets/serralheria/serralheria-4.jpeg";
+import serralheria_5 from "@/assets/serralheria/serralheria-5.jpeg";
+import serralheria_6 from "@/assets/serralheria/serralheria-6.jpeg";
+import serralheria_7 from "@/assets/serralheria/serralheria-7.jpeg";
+import serralheria_8 from "@/assets/serralheria/serralheria-8.jpeg";
+import serralheria_9 from "@/assets/serralheria/serralheria-9.jpeg";
+import serralheria_10 from "@/assets/serralheria/serralheria-10.jpeg";
+import serralheria_11 from "@/assets/serralheria/serralheria-11.jpeg";
+import serralheria_12 from "@/assets/serralheria/serralheria-12.jpeg";
+import serralheria_13 from "@/assets/serralheria/serralheria-13.jpeg";
+import serralheria_14 from "@/assets/serralheria/serralheria-14.jpeg";
+import serralheria_15 from "@/assets/serralheria/serralheria-15.jpeg";
+import serralheria_16 from "@/assets/serralheria/serralheria-16.jpeg";
+import serralheria_17 from "@/assets/serralheria/serralheria-17.jpeg";
+import serralheria_18 from "@/assets/serralheria/serralheria-18.jpeg";
+import serralheria_19 from "@/assets/serralheria/serralheria-19.jpeg";
+import serralheria_20 from "@/assets/serralheria/serralheria-20.jpeg";
+import serralheria_21 from "@/assets/serralheria/serralheria-21.jpeg";
+import serralheria_22 from "@/assets/serralheria/serralheria-22.jpeg";
+import serralheria_23 from "@/assets/serralheria/serralheria-23.jpeg";
+import serralheria_24 from "@/assets/serralheria/serralheria-24.jpeg";
+import serralheria_25 from "@/assets/serralheria/serralheria-25.jpeg";
+import serralheria_26 from "@/assets/serralheria/serralheria-26.jpeg";
+import serralheria_27 from "@/assets/serralheria/serralheria-27.jpeg";
+import serralheria_28 from "@/assets/serralheria/serralheria-28.jpeg";
+import serralheria_29 from "@/assets/serralheria/serralheria-29.jpeg";
+import serralheria_30 from "@/assets/serralheria/serralheria-30.jpeg";
+import serralheria_31 from "@/assets/serralheria/serralheria-31.jpeg";
+import serralheria_32 from "@/assets/serralheria/serralheria-32.jpeg";
+import serralheria_33 from "@/assets/serralheria/serralheria-33.jpeg";
+import serralheria_34 from "@/assets/serralheria/serralheria-34.jpeg";
+import serralheria_35 from "@/assets/serralheria/serralheria-35.jpeg";
+import serralheria_36 from "@/assets/serralheria/serralheria-36.jpeg";
+import serralheria_37 from "@/assets/serralheria/serralheria-37.jpeg";
+import serralheria_38 from "@/assets/serralheria/serralheria-38.jpeg";
+import serralheria_39 from "@/assets/serralheria/serralheria-39.jpeg";
+import serralheria_40 from "@/assets/serralheria/serralheria-40.jpeg";
+import serralheria_41 from "@/assets/serralheria/serralheria-41.jpeg";
+import serralheria_42 from "@/assets/serralheria/serralheria-42.jpeg";
+import serralheria_43 from "@/assets/serralheria/serralheria-43.jpeg";
+import serralheria_44 from "@/assets/serralheria/serralheria-44.jpeg";
+import serralheria_45 from "@/assets/serralheria/serralheria-45.jpeg";
+import serralheria_46 from "@/assets/serralheria/serralheria-46.jpeg";
+import serralheria_47 from "@/assets/serralheria/serralheria-47.jpeg";
+import serralheria_48 from "@/assets/serralheria/serralheria-48.jpeg";
+import serralheria_49 from "@/assets/serralheria/serralheria-49.jpeg";
+import serralheria_50 from "@/assets/serralheria/serralheria-50.jpeg";
+import serralheria_51 from "@/assets/serralheria/serralheria-51.jpeg";
+import serralheria_52 from "@/assets/serralheria/serralheria-52.jpeg";
+import serralheria_53 from "@/assets/serralheria/serralheria-53.jpeg";
+import serralheria_54 from "@/assets/serralheria/serralheria-54.jpeg";
+import serralheria_55 from "@/assets/serralheria/serralheria-55.jpeg";
+import serralheria_56 from "@/assets/serralheria/serralheria-56.jpeg";
+import serralheria_57 from "@/assets/serralheria/serralheria-57.jpeg";
+import serralheria_58 from "@/assets/serralheria/serralheria-58.jpeg";
+import serralheria_59 from "@/assets/serralheria/serralheria-59.jpeg";
+import serralheria_60 from "@/assets/serralheria/serralheria-60.jpeg";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import {
@@ -210,7 +210,7 @@ function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <button onClick={() => scrollTo("hero")} className="flex items-center group">
             <img
-              src={sigmetalLogo.url}
+              src={sigmetalLogo}
               alt="SIG Metal"
               className="h-12 md:h-14 w-auto object-contain"
             />
@@ -279,7 +279,7 @@ function HeroSection() {
     <section id="hero" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={bannerAsset.url}
+          src={bannerAsset}
           alt="Soldagem industrial Sigmetal"
           className="h-full w-full object-cover brightness-[1.15] contrast-110 saturate-105"
           loading="eager"
@@ -443,7 +443,7 @@ function AboutSection() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-800">
               <img
-                src={sobreSerralheria.url}
+                src={sobreSerralheria}
                 alt="Trabalho industrial Sigmetal"
                 className="h-full w-full object-cover opacity-80"
                 loading="lazy"
@@ -469,24 +469,24 @@ function AboutSection() {
 
 function LogoCarousel() {
   const logos = [
-    { name: "Bombril", src: bombrilLogo.url, xl: true },
-    { name: "Cummins Meritor", src: cumminsMeritorLogo.url, xl: true },
-    { name: "Drylock Technologies", src: drylockLogo.url, mega: true },
-    { name: "Hitachi", src: hitachiLogo.url },
-    { name: "Krempel", src: krempelLogo.url },
-    { name: "Uliana", src: ulianaLogo.url },
-    { name: "DSM-Firmenich", src: dsmFirmenichLogo.url },
-    { name: "Cooper", src: cooperLogo.url },
-    { name: "Copobras", src: copobrasLogo.url },
-    { name: "Natura", src: naturaLogo.url, xl: true },
-    { name: "Saint-Gobain", src: saintGobainLogo.url },
-    { name: "Mahle", src: mahleLogo.url },
-    { name: "Mauser Packaging", src: mauserLogo.url },
-    { name: "Emerson", src: emersonLogo.url },
-    { name: "Absafe Group", src: absafeLogo.url },
-    { name: "Tecfil", src: tecfilLogo.url },
-    { name: "Tectool", src: tectoolLogo.url },
-    { name: "Planen Automação", src: planenLogo.url, mega: true },
+    { name: "Bombril", src: bombrilLogo, xl: true },
+    { name: "Cummins Meritor", src: cumminsMeritorLogo, xl: true },
+    { name: "Drylock Technologies", src: drylockLogo, mega: true },
+    { name: "Hitachi", src: hitachiLogo },
+    { name: "Krempel", src: krempelLogo },
+    { name: "Uliana", src: ulianaLogo },
+    { name: "DSM-Firmenich", src: dsmFirmenichLogo },
+    { name: "Cooper", src: cooperLogo },
+    { name: "Copobras", src: copobrasLogo },
+    { name: "Natura", src: naturaLogo, xl: true },
+    { name: "Saint-Gobain", src: saintGobainLogo },
+    { name: "Mahle", src: mahleLogo },
+    { name: "Mauser Packaging", src: mauserLogo },
+    { name: "Emerson", src: emersonLogo },
+    { name: "Absafe Group", src: absafeLogo },
+    { name: "Tecfil", src: tecfilLogo },
+    { name: "Tectool", src: tectoolLogo },
+    { name: "Planen Automação", src: planenLogo, mega: true },
   ];
 
   return (
@@ -574,103 +574,103 @@ type CategoryId = (typeof CATEGORIES)[number]["id"];
 
 const PORTFOLIO_ITEMS: { id: CategoryId; src: string; alt: string }[] = [
   // Proteção de Máquinas NR12
-  { id: "nr12", src: nr12_1.url, alt: "Proteção de máquinas NR12 - projeto 1" },
-  { id: "nr12", src: nr12_2.url, alt: "Proteção de máquinas NR12 - projeto 2" },
-  { id: "nr12", src: nr12_3.url, alt: "Proteção de máquinas NR12 - projeto 3" },
-  { id: "nr12", src: nr12_4.url, alt: "Proteção de máquinas NR12 - projeto 4" },
-  { id: "nr12", src: nr12_5.url, alt: "Proteção de máquinas NR12 - projeto 5" },
-  { id: "nr12", src: nr12_6.url, alt: "Proteção de máquinas NR12 - projeto 6" },
-  { id: "nr12", src: nr12_7.url, alt: "Proteção de máquinas NR12 - projeto 7" },
-  { id: "nr12", src: nr12_8.url, alt: "Proteção de máquinas NR12 - projeto 8" },
-  { id: "nr12", src: nr12_9.url, alt: "Proteção de máquinas NR12 - projeto 9" },
-  { id: "nr12", src: nr12_10.url, alt: "Proteção de máquinas NR12 - projeto 10" },
-  { id: "nr12", src: nr12_11.url, alt: "Proteção de máquinas NR12 - projeto 11" },
-  { id: "nr12", src: nr12_12.url, alt: "Proteção de máquinas NR12 - projeto 12" },
-  { id: "nr12", src: nr12_13.url, alt: "Proteção de máquinas NR12 - projeto 13" },
-  { id: "nr12", src: nr12_14.url, alt: "Proteção de máquinas NR12 - projeto 14" },
-  { id: "nr12", src: nr12_15.url, alt: "Proteção de máquinas NR12 - projeto 15" },
-  { id: "nr12", src: nr12_16.url, alt: "Proteção de máquinas NR12 - projeto 16" },
-  { id: "nr12", src: nr12_17.url, alt: "Proteção de máquinas NR12 - projeto 17" },
-  { id: "nr12", src: nr12_18.url, alt: "Proteção de máquinas NR12 - projeto 18" },
-  { id: "nr12", src: nr12_19.url, alt: "Proteção de máquinas NR12 - projeto 19" },
-  { id: "nr12", src: nr12_20.url, alt: "Proteção de máquinas NR12 - projeto 20" },
-  { id: "nr12", src: nr12_21.url, alt: "Proteção de máquinas NR12 - projeto 21" },
-  { id: "nr12", src: nr12_22.url, alt: "Proteção de máquinas NR12 - projeto 22" },
-  { id: "nr12", src: nr12_23.url, alt: "Proteção de máquinas NR12 - projeto 23" },
-  { id: "nr12", src: nr12_24.url, alt: "Proteção de máquinas NR12 - projeto 24" },
-  { id: "nr12", src: nr12_25.url, alt: "Proteção de máquinas NR12 - projeto 25" },
-  { id: "nr12", src: nr12_26.url, alt: "Proteção de máquinas NR12 - projeto 26" },
-  { id: "nr12", src: nr12_27.url, alt: "Proteção de máquinas NR12 - projeto 27" },
-  { id: "nr12", src: nr12_28.url, alt: "Proteção de máquinas NR12 - projeto 28" },
-  { id: "nr12", src: nr12_29.url, alt: "Proteção de máquinas NR12 - projeto 29" },
-  { id: "nr12", src: nr12_30.url, alt: "Proteção de máquinas NR12 - projeto 30" },
-  { id: "nr12", src: nr12_31.url, alt: "Proteção de máquinas NR12 - projeto 31" },
-  { id: "nr12", src: nr12_32.url, alt: "Proteção de máquinas NR12 - projeto 32" },
-  { id: "nr12", src: nr12_33.url, alt: "Proteção de máquinas NR12 - projeto 33" },
-  { id: "nr12", src: nr12_34.url, alt: "Proteção de máquinas NR12 - projeto 34" },
-  { id: "nr12", src: nr12_35.url, alt: "Proteção de máquinas NR12 - projeto 35" },
-  { id: "nr12", src: nr12_36.url, alt: "Proteção de máquinas NR12 - projeto 36" },
+  { id: "nr12", src: nr12_1, alt: "Proteção de máquinas NR12 - projeto 1" },
+  { id: "nr12", src: nr12_2, alt: "Proteção de máquinas NR12 - projeto 2" },
+  { id: "nr12", src: nr12_3, alt: "Proteção de máquinas NR12 - projeto 3" },
+  { id: "nr12", src: nr12_4, alt: "Proteção de máquinas NR12 - projeto 4" },
+  { id: "nr12", src: nr12_5, alt: "Proteção de máquinas NR12 - projeto 5" },
+  { id: "nr12", src: nr12_6, alt: "Proteção de máquinas NR12 - projeto 6" },
+  { id: "nr12", src: nr12_7, alt: "Proteção de máquinas NR12 - projeto 7" },
+  { id: "nr12", src: nr12_8, alt: "Proteção de máquinas NR12 - projeto 8" },
+  { id: "nr12", src: nr12_9, alt: "Proteção de máquinas NR12 - projeto 9" },
+  { id: "nr12", src: nr12_10, alt: "Proteção de máquinas NR12 - projeto 10" },
+  { id: "nr12", src: nr12_11, alt: "Proteção de máquinas NR12 - projeto 11" },
+  { id: "nr12", src: nr12_12, alt: "Proteção de máquinas NR12 - projeto 12" },
+  { id: "nr12", src: nr12_13, alt: "Proteção de máquinas NR12 - projeto 13" },
+  { id: "nr12", src: nr12_14, alt: "Proteção de máquinas NR12 - projeto 14" },
+  { id: "nr12", src: nr12_15, alt: "Proteção de máquinas NR12 - projeto 15" },
+  { id: "nr12", src: nr12_16, alt: "Proteção de máquinas NR12 - projeto 16" },
+  { id: "nr12", src: nr12_17, alt: "Proteção de máquinas NR12 - projeto 17" },
+  { id: "nr12", src: nr12_18, alt: "Proteção de máquinas NR12 - projeto 18" },
+  { id: "nr12", src: nr12_19, alt: "Proteção de máquinas NR12 - projeto 19" },
+  { id: "nr12", src: nr12_20, alt: "Proteção de máquinas NR12 - projeto 20" },
+  { id: "nr12", src: nr12_21, alt: "Proteção de máquinas NR12 - projeto 21" },
+  { id: "nr12", src: nr12_22, alt: "Proteção de máquinas NR12 - projeto 22" },
+  { id: "nr12", src: nr12_23, alt: "Proteção de máquinas NR12 - projeto 23" },
+  { id: "nr12", src: nr12_24, alt: "Proteção de máquinas NR12 - projeto 24" },
+  { id: "nr12", src: nr12_25, alt: "Proteção de máquinas NR12 - projeto 25" },
+  { id: "nr12", src: nr12_26, alt: "Proteção de máquinas NR12 - projeto 26" },
+  { id: "nr12", src: nr12_27, alt: "Proteção de máquinas NR12 - projeto 27" },
+  { id: "nr12", src: nr12_28, alt: "Proteção de máquinas NR12 - projeto 28" },
+  { id: "nr12", src: nr12_29, alt: "Proteção de máquinas NR12 - projeto 29" },
+  { id: "nr12", src: nr12_30, alt: "Proteção de máquinas NR12 - projeto 30" },
+  { id: "nr12", src: nr12_31, alt: "Proteção de máquinas NR12 - projeto 31" },
+  { id: "nr12", src: nr12_32, alt: "Proteção de máquinas NR12 - projeto 32" },
+  { id: "nr12", src: nr12_33, alt: "Proteção de máquinas NR12 - projeto 33" },
+  { id: "nr12", src: nr12_34, alt: "Proteção de máquinas NR12 - projeto 34" },
+  { id: "nr12", src: nr12_35, alt: "Proteção de máquinas NR12 - projeto 35" },
+  { id: "nr12", src: nr12_36, alt: "Proteção de máquinas NR12 - projeto 36" },
   // Serralheria Industrial
-  { id: "industrial", src: serralheria_1.url, alt: "Serralheria industrial - projeto 1" },
-  { id: "industrial", src: serralheria_2.url, alt: "Serralheria industrial - projeto 2" },
-  { id: "industrial", src: serralheria_3.url, alt: "Serralheria industrial - projeto 3" },
-  { id: "industrial", src: serralheria_4.url, alt: "Serralheria industrial - projeto 4" },
-  { id: "industrial", src: serralheria_5.url, alt: "Serralheria industrial - projeto 5" },
-  { id: "industrial", src: serralheria_6.url, alt: "Serralheria industrial - projeto 6" },
-  { id: "industrial", src: serralheria_7.url, alt: "Serralheria industrial - projeto 7" },
-  { id: "industrial", src: serralheria_8.url, alt: "Serralheria industrial - projeto 8" },
-  { id: "industrial", src: serralheria_9.url, alt: "Serralheria industrial - projeto 9" },
-  { id: "industrial", src: serralheria_10.url, alt: "Serralheria industrial - projeto 10" },
-  { id: "industrial", src: serralheria_11.url, alt: "Serralheria industrial - projeto 11" },
-  { id: "industrial", src: serralheria_12.url, alt: "Serralheria industrial - projeto 12" },
-  { id: "industrial", src: serralheria_13.url, alt: "Serralheria industrial - projeto 13" },
-  { id: "industrial", src: serralheria_14.url, alt: "Serralheria industrial - projeto 14" },
-  { id: "industrial", src: serralheria_15.url, alt: "Serralheria industrial - projeto 15" },
-  { id: "industrial", src: serralheria_16.url, alt: "Serralheria industrial - projeto 16" },
-  { id: "industrial", src: serralheria_17.url, alt: "Serralheria industrial - projeto 17" },
-  { id: "industrial", src: serralheria_18.url, alt: "Serralheria industrial - projeto 18" },
-  { id: "industrial", src: serralheria_19.url, alt: "Serralheria industrial - projeto 19" },
-  { id: "industrial", src: serralheria_20.url, alt: "Serralheria industrial - projeto 20" },
-  { id: "industrial", src: serralheria_21.url, alt: "Serralheria industrial - projeto 21" },
-  { id: "industrial", src: serralheria_22.url, alt: "Serralheria industrial - projeto 22" },
-  { id: "industrial", src: serralheria_23.url, alt: "Serralheria industrial - projeto 23" },
-  { id: "industrial", src: serralheria_24.url, alt: "Serralheria industrial - projeto 24" },
-  { id: "industrial", src: serralheria_25.url, alt: "Serralheria industrial - projeto 25" },
-  { id: "industrial", src: serralheria_26.url, alt: "Serralheria industrial - projeto 26" },
-  { id: "industrial", src: serralheria_27.url, alt: "Serralheria industrial - projeto 27" },
-  { id: "industrial", src: serralheria_28.url, alt: "Serralheria industrial - projeto 28" },
-  { id: "industrial", src: serralheria_29.url, alt: "Serralheria industrial - projeto 29" },
-  { id: "industrial", src: serralheria_30.url, alt: "Serralheria industrial - projeto 30" },
-  { id: "industrial", src: serralheria_31.url, alt: "Serralheria industrial - projeto 31" },
-  { id: "industrial", src: serralheria_32.url, alt: "Serralheria industrial - projeto 32" },
-  { id: "industrial", src: serralheria_33.url, alt: "Serralheria industrial - projeto 33" },
-  { id: "industrial", src: serralheria_34.url, alt: "Serralheria industrial - projeto 34" },
-  { id: "industrial", src: serralheria_35.url, alt: "Serralheria industrial - projeto 35" },
-  { id: "industrial", src: serralheria_36.url, alt: "Serralheria industrial - projeto 36" },
-  { id: "industrial", src: serralheria_37.url, alt: "Serralheria industrial - projeto 37" },
-  { id: "industrial", src: serralheria_38.url, alt: "Serralheria industrial - projeto 38" },
-  { id: "industrial", src: serralheria_39.url, alt: "Serralheria industrial - projeto 39" },
-  { id: "industrial", src: serralheria_40.url, alt: "Serralheria industrial - projeto 40" },
-  { id: "industrial", src: serralheria_41.url, alt: "Serralheria industrial - projeto 41" },
-  { id: "industrial", src: serralheria_42.url, alt: "Serralheria industrial - projeto 42" },
-  { id: "industrial", src: serralheria_43.url, alt: "Serralheria industrial - projeto 43" },
-  { id: "industrial", src: serralheria_44.url, alt: "Serralheria industrial - projeto 44" },
-  { id: "industrial", src: serralheria_45.url, alt: "Serralheria industrial - projeto 45" },
-  { id: "industrial", src: serralheria_46.url, alt: "Serralheria industrial - projeto 46" },
-  { id: "industrial", src: serralheria_47.url, alt: "Serralheria industrial - projeto 47" },
-  { id: "industrial", src: serralheria_48.url, alt: "Serralheria industrial - projeto 48" },
-  { id: "industrial", src: serralheria_49.url, alt: "Serralheria industrial - projeto 49" },
-  { id: "industrial", src: serralheria_50.url, alt: "Serralheria industrial - projeto 50" },
-  { id: "industrial", src: serralheria_51.url, alt: "Serralheria industrial - projeto 51" },
-  { id: "industrial", src: serralheria_52.url, alt: "Serralheria industrial - projeto 52" },
-  { id: "industrial", src: serralheria_53.url, alt: "Serralheria industrial - projeto 53" },
-  { id: "industrial", src: serralheria_54.url, alt: "Serralheria industrial - projeto 54" },
-  { id: "industrial", src: serralheria_55.url, alt: "Serralheria industrial - projeto 55" },
-  { id: "industrial", src: serralheria_56.url, alt: "Serralheria industrial - projeto 56" },
-  { id: "industrial", src: serralheria_57.url, alt: "Serralheria industrial - projeto 57" },
-  { id: "industrial", src: serralheria_58.url, alt: "Serralheria industrial - projeto 58" },
-  { id: "industrial", src: serralheria_59.url, alt: "Serralheria industrial - projeto 59" },
-  { id: "industrial", src: serralheria_60.url, alt: "Serralheria industrial - projeto 60" },
+  { id: "industrial", src: serralheria_1, alt: "Serralheria industrial - projeto 1" },
+  { id: "industrial", src: serralheria_2, alt: "Serralheria industrial - projeto 2" },
+  { id: "industrial", src: serralheria_3, alt: "Serralheria industrial - projeto 3" },
+  { id: "industrial", src: serralheria_4, alt: "Serralheria industrial - projeto 4" },
+  { id: "industrial", src: serralheria_5, alt: "Serralheria industrial - projeto 5" },
+  { id: "industrial", src: serralheria_6, alt: "Serralheria industrial - projeto 6" },
+  { id: "industrial", src: serralheria_7, alt: "Serralheria industrial - projeto 7" },
+  { id: "industrial", src: serralheria_8, alt: "Serralheria industrial - projeto 8" },
+  { id: "industrial", src: serralheria_9, alt: "Serralheria industrial - projeto 9" },
+  { id: "industrial", src: serralheria_10, alt: "Serralheria industrial - projeto 10" },
+  { id: "industrial", src: serralheria_11, alt: "Serralheria industrial - projeto 11" },
+  { id: "industrial", src: serralheria_12, alt: "Serralheria industrial - projeto 12" },
+  { id: "industrial", src: serralheria_13, alt: "Serralheria industrial - projeto 13" },
+  { id: "industrial", src: serralheria_14, alt: "Serralheria industrial - projeto 14" },
+  { id: "industrial", src: serralheria_15, alt: "Serralheria industrial - projeto 15" },
+  { id: "industrial", src: serralheria_16, alt: "Serralheria industrial - projeto 16" },
+  { id: "industrial", src: serralheria_17, alt: "Serralheria industrial - projeto 17" },
+  { id: "industrial", src: serralheria_18, alt: "Serralheria industrial - projeto 18" },
+  { id: "industrial", src: serralheria_19, alt: "Serralheria industrial - projeto 19" },
+  { id: "industrial", src: serralheria_20, alt: "Serralheria industrial - projeto 20" },
+  { id: "industrial", src: serralheria_21, alt: "Serralheria industrial - projeto 21" },
+  { id: "industrial", src: serralheria_22, alt: "Serralheria industrial - projeto 22" },
+  { id: "industrial", src: serralheria_23, alt: "Serralheria industrial - projeto 23" },
+  { id: "industrial", src: serralheria_24, alt: "Serralheria industrial - projeto 24" },
+  { id: "industrial", src: serralheria_25, alt: "Serralheria industrial - projeto 25" },
+  { id: "industrial", src: serralheria_26, alt: "Serralheria industrial - projeto 26" },
+  { id: "industrial", src: serralheria_27, alt: "Serralheria industrial - projeto 27" },
+  { id: "industrial", src: serralheria_28, alt: "Serralheria industrial - projeto 28" },
+  { id: "industrial", src: serralheria_29, alt: "Serralheria industrial - projeto 29" },
+  { id: "industrial", src: serralheria_30, alt: "Serralheria industrial - projeto 30" },
+  { id: "industrial", src: serralheria_31, alt: "Serralheria industrial - projeto 31" },
+  { id: "industrial", src: serralheria_32, alt: "Serralheria industrial - projeto 32" },
+  { id: "industrial", src: serralheria_33, alt: "Serralheria industrial - projeto 33" },
+  { id: "industrial", src: serralheria_34, alt: "Serralheria industrial - projeto 34" },
+  { id: "industrial", src: serralheria_35, alt: "Serralheria industrial - projeto 35" },
+  { id: "industrial", src: serralheria_36, alt: "Serralheria industrial - projeto 36" },
+  { id: "industrial", src: serralheria_37, alt: "Serralheria industrial - projeto 37" },
+  { id: "industrial", src: serralheria_38, alt: "Serralheria industrial - projeto 38" },
+  { id: "industrial", src: serralheria_39, alt: "Serralheria industrial - projeto 39" },
+  { id: "industrial", src: serralheria_40, alt: "Serralheria industrial - projeto 40" },
+  { id: "industrial", src: serralheria_41, alt: "Serralheria industrial - projeto 41" },
+  { id: "industrial", src: serralheria_42, alt: "Serralheria industrial - projeto 42" },
+  { id: "industrial", src: serralheria_43, alt: "Serralheria industrial - projeto 43" },
+  { id: "industrial", src: serralheria_44, alt: "Serralheria industrial - projeto 44" },
+  { id: "industrial", src: serralheria_45, alt: "Serralheria industrial - projeto 45" },
+  { id: "industrial", src: serralheria_46, alt: "Serralheria industrial - projeto 46" },
+  { id: "industrial", src: serralheria_47, alt: "Serralheria industrial - projeto 47" },
+  { id: "industrial", src: serralheria_48, alt: "Serralheria industrial - projeto 48" },
+  { id: "industrial", src: serralheria_49, alt: "Serralheria industrial - projeto 49" },
+  { id: "industrial", src: serralheria_50, alt: "Serralheria industrial - projeto 50" },
+  { id: "industrial", src: serralheria_51, alt: "Serralheria industrial - projeto 51" },
+  { id: "industrial", src: serralheria_52, alt: "Serralheria industrial - projeto 52" },
+  { id: "industrial", src: serralheria_53, alt: "Serralheria industrial - projeto 53" },
+  { id: "industrial", src: serralheria_54, alt: "Serralheria industrial - projeto 54" },
+  { id: "industrial", src: serralheria_55, alt: "Serralheria industrial - projeto 55" },
+  { id: "industrial", src: serralheria_56, alt: "Serralheria industrial - projeto 56" },
+  { id: "industrial", src: serralheria_57, alt: "Serralheria industrial - projeto 57" },
+  { id: "industrial", src: serralheria_58, alt: "Serralheria industrial - projeto 58" },
+  { id: "industrial", src: serralheria_59, alt: "Serralheria industrial - projeto 59" },
+  { id: "industrial", src: serralheria_60, alt: "Serralheria industrial - projeto 60" },
 ];
 
 function ProjectsSection() {
@@ -1063,7 +1063,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
-            <img src={sigmetalLogo.url} alt="Sigmetal" className="h-16 w-auto" />
+            <img src={sigmetalLogo} alt="Sigmetal" className="h-16 w-auto" />
             <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
               Serralheria industrial com foco em qualidade, segurança e pontualidade. Transformando metal em soluções desde 2009.
             </p>
