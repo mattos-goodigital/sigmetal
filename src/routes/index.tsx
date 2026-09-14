@@ -1120,7 +1120,7 @@ function Footer() {
             <img
               src={goodigitalLogo.url}
               alt="Goodigital"
-              className="inline-block h-5 w-auto align-[-4px] invert brightness-0"
+              className="inline-block h-6 w-auto align-[-5px] invert brightness-0"
             />
           </p>
         </div>
