@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAsset from "@/assets/banner-site-sigmetal-3.jpg.asset.json";
 import sigmetalLogo from "@/assets/logo-sigmetal-v2.png.asset.json";
+import goodigitalLogo from "@/assets/logo-goodigital-signature.png.asset.json";
 import sobreSerralheria from "@/assets/sobre-serralheria.jpeg.asset.json";
 import bombrilLogo from "@/assets/logos/bombril.png.asset.json";
 import cumminsMeritorLogo from "@/assets/logos/cummins_meritor.png.asset.json";
@@ -1116,6 +1117,11 @@ function Footer() {
         <div className="mt-16 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-zinc-500">
           <p className="text-center">
             © {new Date().getFullYear()} Sigmetal. Todos os direitos reservados. Desenvolvido por&nbsp;
+            <img
+              src={goodigitalLogo.url}
+              alt="Goodigital"
+              className="inline-block h-4 w-auto align-[-3px] invert opacity-80"
+            />
           </p>
         </div>
       </div>
